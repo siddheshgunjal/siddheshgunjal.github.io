@@ -8,7 +8,7 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.js": "c21852696bc1cc82e8894d851c01921a",
 "canvaskit/profiling/canvaskit.wasm": "371bc4e204443b0d5e774d64a046eb99",
 "flutter.js": "a85fcf6324d3c4d3ae3be1ae4931e9c5",
-"main.dart.js": "54afcda35e4164d09d47b26f5351a06b",
+"main.dart.js": "1977b8900be6412a6e3d2be64527ee9d",
 "version.json": "a29e8b22a08aa0274b027931eec216c4",
 "assets/assets/hi.gif": "cad5918d86b6a7e83f1fb4acead70e4c",
 "assets/assets/namaste.gif": "d97b72a449de3711ab2cdf7f246bc1f8",
@@ -38,7 +38,8 @@ const RESOURCES = {
 "assets/assets/projects/quran.png": "55e8a0c928bc192f682ca0e61cb61ce3",
 "assets/assets/projects/quranB.png": "3cf070457b64cf93d11ad2073bff88e2",
 "assets/assets/projects/snackbar.png": "426d7d3320b4207468e1dec6322b3b08",
-"assets/data.json": "fc755ffb81c1c07576f66f0d32840451",
+"assets/assets/linkedin.png": "7797eeb65f7f1cca220f484f4ee63297",
+"assets/data.json": "09dfc9eb55819e52c3dc74b0f114dae8",
 "assets/fonts/agustina/agustina.otf": "7b9833076716a8d14eec0cf885a3153c",
 "assets/fonts/montserrat/montserrat.ttf": "ee6539921d713482b8ccd4d0d23961bb",
 "assets/fonts/poppins/Poppins-Regular.ttf": "8b6af8e5e8324edfd77af8b3b35d7f9c",
@@ -75,13 +76,13 @@ const RESOURCES = {
 "assets/packages/wakelock_web/assets/no_sleep.js": "7748a45cd593f33280669b29c2c8919a",
 "assets/FontManifest.json": "eb13a0d169d41e78994c5d6eb9075409",
 "assets/NOTICES": "32bf20bd9f1b9a213e02d48fdd72d3f2",
-"assets/AssetManifest.json": "56154991a5385c6c81e098d426309e2b",
-"favicon.png": "61b493df9635f221d909421e8769acb0",
+"assets/AssetManifest.json": "a4f5d76aca8d0fa879ed838e1ce2638a",
 "icons/Icon-192.png": "002516a4b23f153b7ac2928347c377b1",
 "icons/Icon-512.png": "84780d2dfe97536ad1b68213079cc78b",
-"index.html": "fbd7819938059ee4fda765871342ebf4",
-"/": "fbd7819938059ee4fda765871342ebf4",
-"manifest.json": "3421cd00e17d6f742428a18cbf45709d"
+"index.html": "1d4ec2c286e9d20afdd65c358576bd81",
+"/": "1d4ec2c286e9d20afdd65c358576bd81",
+"manifest.json": "b43d8bbdd109ad95df5ebfed13886566",
+"favicon.png": "61a5f180026a23307304c662c883e904"
 };
 
 // The application shell files that are downloaded before a service worker can
