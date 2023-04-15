@@ -1,11 +1,11 @@
 {
-    "name": "Siddhesh",
-    "short_name": "Siddhesh",
+    "name": "Siddhesh Gunjal",
+    "short_name": "Siddhesh Gunjal",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#000000",
     "theme_color": "#0175C2",
-    "description": "Live portfolio using flutter 3.0",
+    "description": "Siddhesh Gunjal is a ML Engineer with 5+ Years of Experience in the field.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
