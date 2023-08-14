@@ -7058,14 +7058,14 @@ if(s&&!c&&!B.c.bf(a,"/")&&!B.c.bf(a,"\\"))return A.ahA(a,!s||c)
 return A.jW(a)},
 ami(a,b,c,d){var s,r={}
 if(a!=null){if(d!=null)throw A.d(A.d5("Both query and queryParameters specified",null))
-return A.Ah(a,b,c,B.e1,!0,!1)}if(d==null)return null
+return A.Ah(a,b,c,B.e2,!0,!1)}if(d==null)return null
 s=new A.cv("")
 r.a=""
 d.X(0,new A.acM(new A.acN(r,s)))
 r=s.a
 return r.charCodeAt(0)==0?r:r},
 amf(a,b,c){if(a==null)return null
-return A.Ah(a,b,c,B.e1,!0,!1)},
+return A.Ah(a,b,c,B.e2,!0,!1)},
 ahz(a,b,c){var s,r,q,p,o,n=b+2
 if(n>=a.length)return"%"
 s=B.c.af(a,b+1)
@@ -7183,7 +7183,7 @@ if(p!==44||r!==n+7||!B.c.cg(a,"base64",n+1))throw A.d(A.cg("Expecting '='",a,r))
 break}}j.push(r)
 m=r+1
 if((j.length&1)===1)a=B.wZ.a39(0,a,m,s)
-else{l=A.aml(a,m,s,B.e1,!0,!1)
+else{l=A.aml(a,m,s,B.e2,!0,!1)
 if(l!=null)a=B.c.kQ(a,m,s,l)}return new A.a74(a,j,c)},
 axe(){var s,r,q,p,o,n="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-._~!$&'()*+,;=",m=".",l=":",k="/",j="\\",i="?",h="#",g="/\\",f=A.a(new Array(22),t.XE)
 for(s=0;s<22;++s)f[s]=new Uint8Array(96)
@@ -13176,7 +13176,7 @@ zk:function zk(){},
 Np:function Np(){},
 akU(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=null,d={}
 d.a=b
-if(a==null)a=B.h6
+if(a==null)a=B.h4
 s=J.aN(a)
 r=s.gp(a)-1
 q=A.aY(0,e,!1,t.LQ)
@@ -13324,7 +13324,7 @@ q.gzE()
 p.szE(q.gzE())
 q.gtI()
 p.stI(q.gtI())
-r.jJ(0,B.h6,p)
+r.jJ(0,B.h4,p)
 r.saI(0,b.gaI(b))
 r.sbz(0,b.gbz(b))
 r.dx=b.ga5y()
@@ -20448,9 +20448,9 @@ s=A.l(r)
 s=A.asq(new A.cV(new A.aC(r,new A.RP(),s.h("aC<n.E>")),new A.RQ(),s.h("cV<n.E,c>")),new A.RR())
 return s==null?null:s.content},
 un(a){var s
-if(A.dI(a,0,null).gJ3())return A.Pq(B.h7,a,B.U,!1)
+if(A.dI(a,0,null).gJ3())return A.Pq(B.h5,a,B.U,!1)
 s=this.gQZ()
-return A.Pq(B.h7,(s==null?"":s)+"assets/"+a,B.U,!1)},
+return A.Pq(B.h5,(s==null?"":s)+"assets/"+a,B.U,!1)},
 dE(a,b){return this.a2N(0,b)},
 a2N(a,b){var s=0,r=A.a0(t.V4),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$dE=A.a1(function(a0,a1){if(a0===1){o=a1
@@ -35084,7 +35084,7 @@ if(m==null){m=o.a
 s=o.b[0]+1
 r=B.c.mb(m,"?",s)
 q=m.length
-if(r>=0){p=A.Ah(m,r+1,q,B.e1,!1,!1)
+if(r>=0){p=A.Ah(m,r+1,q,B.e2,!1,!1)
 q=r}else p=n
 m=o.c=new A.Ks("data","",n,n,A.Ah(m,s,q,B.mY,!1,!1),p,n)}return m},
 j(a){var s=this.a
@@ -52235,7 +52235,7 @@ r.Q=c.k1
 r.to=c.k4
 r.x1=c.ok
 r.x2=c.p1
-r.Xd(b==null?B.h6:b)},
+r.Xd(b==null?B.h4:b)},
 a4M(a,b){return this.jJ(a,null,b)},
 LK(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6=this,a7={}
 a7.a=a6.dy
@@ -52744,7 +52744,7 @@ q=q.b
 if(q!=null)q.cs(0,a)},
 $S(){return this.d.h("aO(0)")}}
 A.a_S.prototype={
-dE(a,b){var s,r,q,p,o,n=null,m=A.Pq(B.h7,b,B.U,!1),l=A.amj(n,0,0),k=A.amg(n,0,0,!1),j=A.ami(n,0,0,n),i=A.amf(n,0,0),h=A.ahy(n,"")
+dE(a,b){var s,r,q,p,o,n=null,m=A.Pq(B.h5,b,B.U,!1),l=A.amj(n,0,0),k=A.amg(n,0,0,!1),j=A.ami(n,0,0,n),i=A.amf(n,0,0),h=A.ahy(n,"")
 if(k==null)s=l.length!==0||h!=null||!1
 else s=!1
 if(s)k=""
@@ -64430,7 +64430,7 @@ s.toString
 s=s*3*2
 r=$.bt
 r.toString
-q=new A.h7(B.e3,t.ly)
+q=new A.h7(B.e1,t.ly)
 n=A.a7p(B.eR,q.gde(q).dT(0,new A.a0u(),t.XV).cY(0),B.vV,m.a.b*0.04,n.a.a*0.04)
 m=$.xi
 m.toString
@@ -64438,7 +64438,7 @@ q=$.bp.a
 p=A.d6(25)
 return A.bW(o,A.cf(A.a([B.fA,B.fD,r,n,m,A.j3(A.eA(A.aU("See More!",$.hB.fc(20),B.Z,o),q,o,o,o,o,new A.a0v(),B.cC,new A.bS(p,B.n),o),o,o)],t.p),B.Y,B.q,B.o),o,o,o,o,new A.aF(s,0,s,0),o)}}
 A.a0u.prototype={
-$1(a){return new A.iJ(B.e3[a.gc2(a)],B.h4[a.gc2(a)],B.h3[a.gc2(a)],B.h1[a.gc2(a)],null)},
+$1(a){return new A.iJ(B.e1[a.gc2(a)],B.h6[a.gc2(a)],B.h3[a.gc2(a)],B.h7[a.gc2(a)],null)},
 $S:405}
 A.a0v.prototype={
 $0(){A.fG(A.dI(u.k,0,null))},
@@ -64453,7 +64453,7 @@ q=$.bp.a
 p=A.d6(25)
 return A.cf(A.a([B.fA,B.fD,m,s,r,A.j3(A.eA(A.aU("See More!",$.hB.fc(15),B.Z,o),q,o,o,o,o,new A.a0x(),B.cC,new A.bS(p,B.n),o),o,o)],t.p),B.Y,B.q,B.o)}}
 A.a0w.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e3[c],B.h4[c],B.h3[c],B.h1[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e1[c],B.h6[c],B.h3[c],B.h7[c],null),null)},
 $S:38}
 A.a0x.prototype={
 $0(){A.fG(A.dI(u.k,0,null))},
@@ -64470,7 +64470,7 @@ p=$.bp.a
 o=A.d6(25)
 return A.cf(A.a([B.fA,B.fD,s,r,q,A.j3(A.eA(A.aU("See More!",$.hB.fc(20),B.Z,n),p,n,n,n,n,new A.a0z(),B.cC,new A.bS(o,B.n),n),n,n)],t.p),B.Y,B.q,B.o)}}
 A.a0y.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e3[c],B.h4[c],B.h3[c],B.h1[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e1[c],B.h6[c],B.h3[c],B.h7[c],null),null)},
 $S:38}
 A.a0z.prototype={
 $0(){A.fG(A.dI(u.k,0,null))},
@@ -64532,10 +64532,10 @@ s.toString
 s=s*3*4
 r=$.bt
 r.toString
-q=new A.h7(B.e2,t.ly)
+q=new A.h7(B.e3,t.ly)
 return A.bW(p,A.cf(A.a([B.fy,B.fB,r,A.a7p(B.eR,q.gde(q).dT(0,new A.a3C(),t.m1).cY(0),B.vV,n.a.b*0.05,o.a.a*0.05)],t.p),B.Y,B.q,B.o),p,p,p,p,new A.aF(s,0,s,0),p)}}
 A.a3C.prototype={
-$1(a){return new A.iN(B.e2[a.gc2(a)],B.h2[a.gc2(a)],B.h5[a.gc2(a)],null)},
+$1(a){return new A.iN(B.e3[a.gc2(a)],B.h1[a.gc2(a)],B.h2[a.gc2(a)],null)},
 $S:406}
 A.I2.prototype={
 E(a){var s=t.w,r=a.I(s).f.a.b
@@ -64544,7 +64544,7 @@ s=$.bt
 s.toString
 return A.cf(A.a([B.fy,B.fB,s,A.BS(new A.a3D(),4,A.BR(!0,B.aK,B.aT,B.c0,!1,!0,r>700?r*0.38:r*0.5,0.65))],t.p),B.Y,B.q,B.o)}}
 A.a3D.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e2[c],B.h2[c],B.h5[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e3[c],B.h1[c],B.h2[c],null),null)},
 $S:38}
 A.I3.prototype={
 E(a){var s,r=t.w,q=a.I(r).f.a.b
@@ -64553,7 +64553,7 @@ s=$.bt
 s.toString
 return A.cf(A.a([B.fy,B.fB,s,A.BS(new A.a3E(),4,A.BR(!0,B.aK,B.aT,B.c0,!1,!0,r.a.a<750?q*0.45:q*0.3,0.55))],t.p),B.Y,B.q,B.o)}}
 A.a3E.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e2[c],B.h2[c],B.h5[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e3[c],B.h1[c],B.h2[c],null),null)},
 $S:38}
 A.iN.prototype={
 ae(){return new A.O6(new A.bj(null,t.Fa),B.j)}}
@@ -68247,13 +68247,14 @@ B.bc=new A.cZ(1,"fuchsia")
 B.bd=new A.cZ(3,"linux")
 B.be=new A.cZ(5,"windows")
 B.BM=A.a(s([B.aG,B.bc,B.ai,B.bd,B.b0,B.be]),t.r6)
+B.e1=A.a(s(["assets/projects/slackker.webp","assets/projects/emo.webp","assets/projects/cctv-camera.webp","assets/projects/ar_menu.webp","assets/projects/ar_brochure.webp","assets/projects/ar_pack.webp","assets/projects/robot.webp","assets/projects/teeth.webp","assets/projects/invoice.webp","assets/projects/motion_control.webp","assets/projects/ar_car.webp","assets/projects/ratlab.webp"]),t.s)
 B.mK=A.a(s(["Video Meet","Telegram","Email"]),t.s)
 B.C1=A.a(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.F)
 B.wr=new A.o6(0,"polite")
 B.C2=A.a(s([B.wr,B.lg]),A.ae("w<o6>"))
-B.e1=A.a(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
+B.e2=A.a(s([0,0,65490,45055,65535,34815,65534,18431]),t.t)
 B.mL=A.a(s(["https://topmate.io/siddheshgunjal","https://t.me/siddheshgunjal9702","mailto:siddhu19@live.com?subject=Contacting from you Website&body=Hello Siddhesh,\n"]),t.s)
-B.e2=A.a(s(["assets/services/ml2.webp","assets/services/app.webp","assets/services/arvr.webp","assets/services/cons.webp"]),t.s)
+B.e3=A.a(s(["assets/services/ml2.webp","assets/services/app.webp","assets/services/arvr.webp","assets/services/cons.webp"]),t.s)
 B.kU=new A.cw(0,"DoubleQuote")
 B.cm=new A.cw(1,"SingleQuote")
 B.ad=new A.cw(2,"HebrewLetter")
@@ -68274,17 +68275,13 @@ B.du=new A.cw(16,"ZWJ")
 B.kX=new A.cw(17,"WSegSpace")
 B.vS=new A.cw(18,"Unknown")
 B.C4=A.a(s([B.kU,B.cm,B.ad,B.eP,B.eQ,B.kY,B.dv,B.Ns,B.dw,B.dx,B.aQ,B.kV,B.kW,B.dt,B.bj,B.eO,B.du,B.kX,B.vS]),A.ae("w<cw>"))
-B.e3=A.a(s(["assets/projects/slack.webp","assets/projects/emo.webp","assets/projects/ar_pack.webp","assets/projects/teeth.webp","assets/projects/cctv-camera.webp","assets/projects/robot.webp","assets/projects/ar_brochure.webp","assets/projects/ar_menu.webp","assets/projects/invoice.webp","assets/projects/motion_control.webp","assets/projects/ar_car.webp","assets/projects/ratlab.webp"]),t.s)
 B.mM=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
-B.h1=A.a(s(["https://www.linkedin.com/posts/siddheshgunjal_python-ml-keras-activity-7019906325933400064-Fju0?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1CTOZ2c1Ih44FDLJw7FJYjHUmWyqjcPEC/view?usp=share_link","https://drive.google.com/file/d/1kupwBg3tG1ltc2CHdaesOVQ_FoOx4TTw/view?usp=share_link","https://drive.google.com/file/d/14dc8kKYCKulc4f_K6F_sEg5xNDBGppl3/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_ai-deeplearning-cybersecurity-activity-6827897161070514176-BM6Y?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1C524djF-VH1C5enz_D-jOVgGz5WstbwK/view?usp=share_link","https://drive.google.com/file/d/1b8ceL2X4uYXPRuTqxtI_z1fQ_JTJBHqt/view?usp=share_link","https://drive.google.com/file/d/1yCe2di8sKTNofM2Dspym_Pe_R4qDRa2P/view?usp=share_link","https://drive.google.com/file/d/1tQM3mkNG2AnEn06QjoR2-KSUcy_55gEx/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_computervision-vr-ar-activity-6693559090808975360-8N8T?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_automobiles-extendedreality-augmentedreality-activity-6835547416591167488-W_nI?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1L3fLWhPIfQ6Kb23xR2WXoOw_XfZfYLF8/view?usp=share_link"]),t.s)
-B.h2=A.a(s(["Professional Support","ML Development","Web3D Development","Native AR/VR"]),t.s)
-B.h3=A.a(s(["Slackker is a python package for monitoring your Model training status in real-time on slack & telegram. It can send you update for your ML model training progress and send final report with graphs when the training is finished.","Emo-Detect is a standalone (Windows/MacOS/Linux) application with the capability to track user's emotions in the background with specified interval throughout the day/session. Admin can later visualise the emotion distribution for particular user through admin portal in the app itself. This app is optimized to run in the background with minimal CPU usage.","AR packaging is WebAR product packaging solution for a company that wants to provide an immersive and interactive experience for their customers. The WebAR product packaging will be designed to showcase the product's features, benefits, and even provide instructions on how to use the product.","Dental 3D is a WebApp that provides an interactive experience for patients to explore and learn about dental procedures and their dental structure. It uses 3D modeling and optimised rendering technology to create realistic and detailed simulation of dental procedures, allowing better patient engagement and understanding of dental procedures.","This application will track all the faces that CCTV captures in realtime. It will track all the faces from all camera feeds and saves the Best face position and assigns unique UUID to each face tracked and saved in database. This can be later combined with face clustering system to track the person.","This WebApp takes advantage of Android's ARCore for spatial computing of the surroundings to detect planes and objects. This WebApp aims to provide an innovative and engaging way for you to explore and learn about places, things, etc. leading to increased engagement and improved customer satisfaction.","The project was to develop a WebAR application that can be integrated with any brochure for a real estate company. This AR enabled brochure will provide an immersive and interactive experience for potential buyers to explore properties in a unique and engaging way. This will allow users to view 3D models of properties, explore floor plans of the properties.","This is WebAR application can be integrated into any website. This AR menu will allow website visitors to interact with the menu items in an immersive and interactive way using their handheld devices. The menu is compatible with all handheld devices, and it will allow users to view and interact with 3D models of the products or services. ","Invoice vision is a WebApp that uses computer vision to automatically detect and extract relevant information from invoices, such as the vendor name, invoice number, date, particulars, their amount and total amount. This will streamline the invoicing process, reducing the need for manual data entry and saving time and resources for businesses.","With this application we can interact with any 3D environment (Hologram, Mixed Reality object, etc.) with natural human motions/gestures. The motion control system for holograms can be used in many places such as Museums, historical places, etc. to provide an intuitive and immersive experience for users, allowing them to interact with holograms in a unique and engaging way.","The AR car showroom solution will allow customers to access the showroom through their mobile devices and interact with 3D models of cars. Customers will be able to explore the exterior and interior of cars, customize the colors and features, and learn about the car's specifications and features. This solution is developed with Unity Engine.","RatLab is a VR based rat dissection tool for education, allowing students to learn about rat anatomy, physiology and get and hands on experience to conduct an operation. This will help students to get an idea of correct procedure to follow during and actual dissection/operation and build their confidence to get ready to conduct an operation in real life. "]),t.s)
+B.h1=A.a(s(["Professional Support","ML Development","Web3D Development","Native AR/VR"]),t.s)
 B.Da=new A.kH("en","US")
 B.mN=A.a(s([B.Da]),t.ss)
 B.l3=new A.re(0,"named")
 B.Oo=new A.re(1,"anonymous")
 B.Cc=A.a(s([B.l3,B.Oo]),A.ae("w<re>"))
-B.h4=A.a(s(["Slackker (Open Source)","Emo-Detect","AR Packaging","Dental 3D","AI assisted CCTV","Spatial AR on Web","Interactive Brochure","WebAR Menu","Invoice Vision","Motion controlled Holograms","AR Car Showroom","RatLab"]),t.s)
 B.G=new A.qj(0,"upstream")
 B.x=new A.qj(1,"downstream")
 B.Cm=A.a(s([B.G,B.x]),A.ae("w<qj>"))
@@ -68295,7 +68292,7 @@ B.mP=A.a(s([B.fQ,B.dT,B.cJ,B.dW,B.e_,B.c4,B.mG,B.h0,B.aD,B.e0,B.bF,B.cG,B.cH,B.d
 B.mQ=A.a(s(["HOME","ABOUT","SERVICES","PORTFOLIO","CONTACT"]),t.s)
 B.wc=new A.k7("Age","26",null)
 B.mR=A.a(s([B.la,B.wc]),t.p)
-B.h5=A.a(s(["Professional Consultation/Guidance\n- Industry Expert Support\n- ML Deployment Consultation \n- Teaching and more...!","End-to-End ML development\n- TensorFlow\n- PyTorch\n- MobileML\n- MLOps and more...!","Complete Web3D solution\n- WebAR for E-commerce\n- Web3D for your Website\n- Virtual Tour WebApp\n- WebAR enabled Physical store","Native AR/VR Application Development\n- Dedicated VR Environment\n- Optimised for SteamVR Devices\n- Optimised For Mobile"]),t.s)
+B.h2=A.a(s(["Professional Consultation/Guidance\n- Industry Expert Support\n- ML Deployment Consultation \n- Teaching and more...!","End-to-End ML development\n- TensorFlow\n- PyTorch\n- MobileML\n- MLOps and more...!","Complete Web3D solution\n- WebAR for E-commerce\n- Web3D for your Website\n- Virtual Tour WebApp\n- WebAR enabled Physical store","Native AR/VR Application Development\n- Dedicated VR Environment\n- Optimised for SteamVR Devices\n- Optimised For Mobile"]),t.s)
 B.An=new A.EK(null)
 B.wg=new A.B6(null)
 B.Hh=new A.I4(null)
@@ -68306,6 +68303,7 @@ B.Cq=A.a(s([B.An,B.wg,B.Hh,B.Ga,B.zh,B.Ah]),t.p)
 B.Cr=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
 B.Ct=A.a(s(["click","scroll"]),t.s)
 B.mS=A.a(s(["Book an Appointment","Connect on Telegram","siddhu19@live.com"]),t.s)
+B.h3=A.a(s(["Slackker is a python package for monitoring your Model training status in real-time on slack & telegram. It can send you update for your ML model training progress and send final report with graphs when the training is finished.","Emo-Detect is a standalone (Windows/MacOS/Linux) application with the capability to track user's emotions in the background with specified interval throughout the day/session. Admin can later visualise the emotion distribution for particular user through admin portal in the app itself. This app is optimized to run in the background with minimal CPU usage.","This application will track all the faces that CCTV captures in realtime. It will track all the faces from all camera feeds and saves the Best face position and assigns unique UUID to each face tracked and saved in database. This can be later combined with face clustering system to track the person.","This is WebAR application can be integrated into any website. This AR menu will allow website visitors to interact with the menu items in an immersive and interactive way using their handheld devices. The menu is compatible with all handheld devices, and it will allow users to view and interact with 3D models of the products or services. ","The project was to develop a WebAR application that can be integrated with any brochure for a real estate company. This AR enabled brochure will provide an immersive and interactive experience for potential buyers to explore properties in a unique and engaging way. This will allow users to view 3D models of properties, explore floor plans of the properties.","AR packaging is WebAR product packaging solution for a company that wants to provide an immersive and interactive experience for their customers. The WebAR product packaging will be designed to showcase the product's features, benefits, and even provide instructions on how to use the product.","This WebApp takes advantage of Android's ARCore for spatial computing of the surroundings to detect planes and objects. This WebApp aims to provide an innovative and engaging way for you to explore and learn about places, things, etc. leading to increased engagement and improved customer satisfaction.","Dental 3D is a WebApp that provides an interactive experience for patients to explore and learn about dental procedures and their dental structure. It uses 3D modeling and optimised rendering technology to create realistic and detailed simulation of dental procedures, allowing better patient engagement and understanding of dental procedures.","Invoice vision is a WebApp that uses computer vision to automatically detect and extract relevant information from invoices, such as the vendor name, invoice number, date, particulars, their amount and total amount. This will streamline the invoicing process, reducing the need for manual data entry and saving time and resources for businesses.","With this application we can interact with any 3D environment (Hologram, Mixed Reality object, etc.) with natural human motions/gestures. The motion control system for holograms can be used in many places such as Museums, historical places, etc. to provide an intuitive and immersive experience for users, allowing them to interact with holograms in a unique and engaging way.","The AR car showroom solution will allow customers to access the showroom through their mobile devices and interact with 3D models of cars. Customers will be able to explore the exterior and interior of cars, customize the colors and features, and learn about the car's specifications and features. This solution is developed with Unity Engine.","RatLab is a VR based rat dissection tool for education, allowing students to learn about rat anatomy, physiology and get and hands on experience to conduct an operation. This will help students to get an idea of correct procedure to follow during and actual dissection/operation and build their confidence to get ready to conduct an operation in real life. "]),t.s)
 B.Cu=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.F)
 B.mW=A.a(s([]),A.ae("w<aAL>"))
 B.Cv=A.a(s([]),t.Zb)
@@ -68315,14 +68313,16 @@ B.cO=A.a(s([]),t.f)
 B.mV=A.a(s([]),t.fy)
 B.CC=A.a(s([]),A.ae("w<agz<@>>"))
 B.CE=A.a(s([]),t.D1)
-B.h6=A.a(s([]),t.T)
+B.h4=A.a(s([]),t.T)
 B.a4=A.a(s([]),t.oU)
 B.CD=A.a(s([]),t.Lx)
 B.OQ=A.a(s([]),t.p)
 B.e5=A.a(s([]),t.t)
 B.mT=A.a(s([]),t.ee)
 B.CG=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
-B.h7=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
+B.h5=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
+B.h6=A.a(s(["Slackker (Open Source)","Emo-Detect","AI assisted CCTV","WebAR Menu","Interactive Brochure","AR Packaging","Spatial AR on Web","Dental 3D","Invoice Vision","Motion controlled Holograms","AR Car Showroom","RatLab"]),t.s)
+B.h7=A.a(s(["https://www.linkedin.com/posts/siddheshgunjal_python-ml-keras-activity-7019906325933400064-Fju0?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1CTOZ2c1Ih44FDLJw7FJYjHUmWyqjcPEC/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_ai-deeplearning-cybersecurity-activity-6827897161070514176-BM6Y?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_webar-computervision-ecommerce-activity-7092418735092772865-1WR9?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_realestate-realestatebusiness-webar-activity-7096732185600172032-2hmF?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1kupwBg3tG1ltc2CHdaesOVQ_FoOx4TTw/view?usp=share_link","https://drive.google.com/file/d/1C524djF-VH1C5enz_D-jOVgGz5WstbwK/view?usp=share_link","https://drive.google.com/file/d/14dc8kKYCKulc4f_K6F_sEg5xNDBGppl3/view?usp=share_link","https://drive.google.com/file/d/1tQM3mkNG2AnEn06QjoR2-KSUcy_55gEx/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_computervision-vr-ar-activity-6693559090808975360-8N8T?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_automobiles-extendedreality-augmentedreality-activity-6835547416591167488-W_nI?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1L3fLWhPIfQ6Kb23xR2WXoOw_XfZfYLF8/view?usp=share_link"]),t.s)
 B.wd=new A.k7("From","Navi Mumbai, India",null)
 B.CJ=A.a(s([B.f4,B.wd]),t.p)
 B.aH=new A.fC(0,"leading")
