@@ -299,7 +299,7 @@ break
 case 1:return A.Z(q,r)}})
 return A.a_($async$BZ,r)},
 az3(a){var s,r,q,p,o,n,m
-$label0$0:for(s=a.length,r=0;r<6;++r){q=B.CP[r]
+$label0$0:for(s=a.length,r=0;r<6;++r){q=B.CQ[r]
 p=q.a
 o=p.length
 if(s<o)continue $label0$0
@@ -717,7 +717,7 @@ return s},
 aA2(a,b){var s,r,q,p="destalpha",o="flood",n="comp",m="SourceGraphic"
 switch(b.a){case 5:case 9:s=A.nc()
 A.F(s.c,"setAttribute",["color-interpolation-filters","sRGB"])
-s.uH(B.Cu,p)
+s.uH(B.Cv,p)
 r=A.df(a)
 s.l0(r==null?"":r,"1",o)
 s.pw(o,p,1,0,0,0,6,n)
@@ -7017,7 +7017,7 @@ j=1}else j=3
 q.a=k+n
 s+=j
 r=s
-p=!0}else if(o<127&&(B.CN[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.cv("")
+p=!0}else if(o<127&&(B.CO[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.cv("")
 if(r<s){q.a+=B.c.a7(a,r,s)
 r=s}p=!1}++s}else if(o<=93&&(B.mI[o>>>4]&1<<(o&15))!==0)A.rk(a,s,"Invalid character")
 else{if((o&64512)===55296&&s+1<c){i=B.c.af(a,s+1)
@@ -7047,7 +7047,7 @@ if(a==="https")return"https"
 if(a==="package")return"package"
 return a},
 amj(a,b,c){if(a==null)return""
-return A.Ah(a,b,c,B.CG,!1,!1)},
+return A.Ah(a,b,c,B.CH,!1,!1)},
 amh(a,b,c,d,e,f){var s,r=e==="file",q=r||f
 if(a==null)return r?"/":""
 else s=A.Ah(a,b,c,B.mY,!0,!0)
@@ -13176,7 +13176,7 @@ zk:function zk(){},
 Np:function Np(){},
 akU(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=null,d={}
 d.a=b
-if(a==null)a=B.h4
+if(a==null)a=B.h5
 s=J.aN(a)
 r=s.gp(a)-1
 q=A.aY(0,e,!1,t.LQ)
@@ -13324,7 +13324,7 @@ q.gzE()
 p.szE(q.gzE())
 q.gtI()
 p.stI(q.gtI())
-r.jJ(0,B.h4,p)
+r.jJ(0,B.h5,p)
 r.saI(0,b.gaI(b))
 r.sbz(0,b.gbz(b))
 r.dx=b.ga5y()
@@ -20448,9 +20448,9 @@ s=A.l(r)
 s=A.asq(new A.cV(new A.aC(r,new A.RP(),s.h("aC<n.E>")),new A.RQ(),s.h("cV<n.E,c>")),new A.RR())
 return s==null?null:s.content},
 un(a){var s
-if(A.dI(a,0,null).gJ3())return A.Pq(B.h5,a,B.U,!1)
+if(A.dI(a,0,null).gJ3())return A.Pq(B.h6,a,B.U,!1)
 s=this.gQZ()
-return A.Pq(B.h5,(s==null?"":s)+"assets/"+a,B.U,!1)},
+return A.Pq(B.h6,(s==null?"":s)+"assets/"+a,B.U,!1)},
 dE(a,b){return this.a2N(0,b)},
 a2N(a,b){var s=0,r=A.a0(t.V4),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$dE=A.a1(function(a0,a1){if(a0===1){o=a1
@@ -21355,7 +21355,7 @@ n=A.al(new A.b1(p,l),!0,l.h("n.E"))
 new A.aC(n,new A.XK(q),A.a4(n).h("aC<1>")).X(0,m.gX6())
 new A.aC(q,new A.XL(m),A.a4(q).h("aC<1>")).X(0,r)}},
 LD(a){var s,r,q,p,o,n,m,l,k=A.jD().c-1
-if(k===0)return B.Cv
+if(k===0)return B.Cw
 s=A.a([],t.Zb)
 r=t.t
 q=A.a([],r)
@@ -22785,7 +22785,7 @@ pk(){var s=this.as
 s===$&&A.b()
 return s},
 mD(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.CD
+if(a<0||b<0)return B.CE
 s=this.d
 s.toString
 r=this.iT(s)
@@ -28289,14 +28289,14 @@ Tc(){var s=this,r=s.z
 if(r==null){r=s.z=new A.ry(s.f)
 r.d=new A.W7(s)}return r},
 Kq(a){var s,r=this
-if(B.b.B(B.Cr,a.type)){s=r.Tc()
+if(B.b.B(B.Cs,a.type)){s=r.Tc()
 s.toString
 s.syh(J.hz(r.f.$0(),B.cA))
 if(r.y!==B.mv){r.y=B.mv
 r.ES()}}return r.r.a.Mj(a)},
 ES(){var s,r
 for(s=this.Q,r=0;r<s.length;++r)s[r].$1(this.y)},
-Mh(a){if(B.b.B(B.Ct,a))return this.y===B.c2
+Mh(a){if(B.b.B(B.Cu,a))return this.y===B.c2
 return!1},
 a4K(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this
 if(!f.w){f.r.a.l()
@@ -30794,7 +30794,7 @@ o=A.f6(r.i(s,"textAlignIndex"))
 n=A.f6(r.i(s,"textDirectionIndex"))
 m=A.nO(r.i(s,"fontWeightIndex"))
 l=m!=null?A.anr(m):"normal"
-q=new A.a6D(new A.VC(A.awU(r.i(s,"fontSize")),l,A.cy(r.i(s,"fontFamily")),B.CQ[o],B.mO[n]))
+q=new A.a6D(new A.VC(A.awU(r.i(s,"fontSize")),l,A.cy(r.i(s,"fontFamily")),B.CR[o],B.mO[n]))
 break
 case"TextInput.clearClient":q=B.xO
 break
@@ -39716,7 +39716,7 @@ r=n.r
 n=n.CW
 q=p.gVD()
 p.a.toString
-return new A.xT(o,o,o,new A.aah(),o,o,o,o,o,o,m,o,r,B.CA,p.gVJ(),n,o,B.J9,s,o,q,o,o,B.mN,!1,!1,!1,!1,p.gVo(),!1,o,o,o,!1,new A.kt(p,t.bT))},
+return new A.xT(o,o,o,new A.aah(),o,o,o,o,o,o,m,o,r,B.CB,p.gVJ(),n,o,B.J9,s,o,q,o,o,B.mN,!1,!1,!1,!1,p.gVo(),!1,o,o,o,!1,new A.kt(p,t.bT))},
 E(a){var s,r=null,q=A.Em(!1,!1,this.Rb(a),r,r,r,r,!0,r,r,new A.aai(),r,r,r)
 this.a.toString
 s=this.d
@@ -39835,7 +39835,7 @@ A.nw.prototype={
 F(){return"_CornerId."+this.b}}
 A.jO.prototype={}
 A.pg.prototype={
-i9(){var s,r,q=this,p=A.ay3(B.CM,new A.Zj(q,q.b.gaW().ab(0,q.a.gaW()))),o=q.a
+i9(){var s,r,q=this,p=A.ay3(B.CN,new A.Zj(q,q.b.gaW().ab(0,q.a.gaW()))),o=q.a
 o.toString
 s=p.a
 o=q.le(o,s)
@@ -52235,7 +52235,7 @@ r.Q=c.k1
 r.to=c.k4
 r.x1=c.ok
 r.x2=c.p1
-r.Xd(b==null?B.h4:b)},
+r.Xd(b==null?B.h5:b)},
 a4M(a,b){return this.jJ(a,null,b)},
 LK(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6=this,a7={}
 a7.a=a6.dy
@@ -52744,7 +52744,7 @@ q=q.b
 if(q!=null)q.cs(0,a)},
 $S(){return this.d.h("aO(0)")}}
 A.a_S.prototype={
-dE(a,b){var s,r,q,p,o,n=null,m=A.Pq(B.h5,b,B.U,!1),l=A.amj(n,0,0),k=A.amg(n,0,0,!1),j=A.ami(n,0,0,n),i=A.amf(n,0,0),h=A.ahy(n,"")
+dE(a,b){var s,r,q,p,o,n=null,m=A.Pq(B.h6,b,B.U,!1),l=A.amj(n,0,0),k=A.amg(n,0,0,!1),j=A.ami(n,0,0,n),i=A.amf(n,0,0),h=A.ahy(n,"")
 if(k==null)s=l.length!==0||h!=null||!1
 else s=!1
 if(s)k=""
@@ -57697,7 +57697,7 @@ if(l===0)l=1}l=A.VA(B.eN,l)
 p=p.a.a.a
 s.gkT()
 s.gkT()
-return new A.dY(new A.ve(q,r,o.e,o.d,k,n,m,l,!1,(p&1)!==0,(p&2)!==0,(p&32)!==0,(p&4)!==0,(p&8)!==0,B.hx,new A.Dd(null),B.CB),this.a.c,null)},
+return new A.dY(new A.ve(q,r,o.e,o.d,k,n,m,l,!1,(p&1)!==0,(p&2)!==0,(p&32)!==0,(p&4)!==0,(p&8)!==0,B.hx,new A.Dd(null),B.CC),this.a.c,null)},
 l(){B.b.A($.az.ah$,this)
 this.aT()}}
 A.aaA.prototype={
@@ -57948,7 +57948,7 @@ m.d=new A.bj(null,t.ku)
 B.b.M(r,s.KM(null,m))
 m.a.toString
 q=0
-for(;!1;++q){p=B.CC[q]
+for(;!1;++q){p=B.CD[q]
 r=m.c
 r.toString
 r=p.yd(r)
@@ -62815,7 +62815,7 @@ if(a.a===B.de)return s.c===-1?s.Em(a,!0):s.Cy(a,!0)
 return s.d===-1?s.Em(a,!1):s.Cy(a,!1)},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gwt(),p=0;p<s.length;s.length===r||(0,A.J)(s),++p)J.aqC(s[p],q)
-o.b=B.CE
+o.b=B.CF
 o.y=!1
 o.cS()},
 en(a,b){return a.rG(b)},
@@ -63380,7 +63380,7 @@ g.p2=A.y(t.D2,q)
 p=g.p1
 s=s.c
 g.p1=A.y(s,q)
-for(o=0;o<4;++o){n=B.CL[o]
+for(o=0;o<4;++o){n=B.CM[o]
 m=f.ZT(n)
 l=m==null?null:m.a
 k=p.i(0,n)
@@ -64026,7 +64026,7 @@ a5=$.bt
 a5.toString
 a6=A.fW(B.X,$.b_*0.5*0.77+0.5)
 a7=t.p
-a8=A.cd(A.a([A.cf(B.mR,B.aI,B.q,B.o),B.HU,A.cf(B.CJ,B.aI,B.q,B.o)],a7),B.q,B.o)
+a8=A.cd(A.a([A.cf(B.mR,B.aI,B.q,B.o),B.HU,A.cf(B.CK,B.aI,B.q,B.o)],a7),B.q,B.o)
 a9=$.hh
 a9.toString
 b0=$.bp.a
@@ -64160,7 +64160,7 @@ a5=A.fW(B.X,$.b_*0.5*0.77+0.5)
 a6=A.cD(b2,b5*0.02,b2)
 a7=A.cf(B.mR,B.aI,B.q,B.o)
 a8=t.p
-a7=A.cd(A.a([a7,A.cD(b2,b2,b6>710?b6*0.2:b6*0.05),A.cf(B.CU,B.aI,B.q,B.o)],a8),B.ag,B.o)
+a7=A.cd(A.a([a7,A.cD(b2,b2,b6>710?b6*0.2:b6*0.05),A.cf(B.CV,B.aI,B.q,B.o)],a8),B.ag,B.o)
 a9=$.hh
 a9.toString
 b0=$.bp.a
@@ -64438,7 +64438,7 @@ q=$.bp.a
 p=A.d6(25)
 return A.bW(o,A.cf(A.a([B.fA,B.fD,r,n,m,A.j3(A.eA(A.aU("See More!",$.hB.fc(20),B.Z,o),q,o,o,o,o,new A.a0v(),B.cC,new A.bS(p,B.n),o),o,o)],t.p),B.Y,B.q,B.o),o,o,o,o,new A.aF(s,0,s,0),o)}}
 A.a0u.prototype={
-$1(a){return new A.iJ(B.e1[a.gc2(a)],B.h6[a.gc2(a)],B.h3[a.gc2(a)],B.h7[a.gc2(a)],null)},
+$1(a){return new A.iJ(B.e1[a.gc2(a)],B.h7[a.gc2(a)],B.h4[a.gc2(a)],B.h1[a.gc2(a)],null)},
 $S:405}
 A.a0v.prototype={
 $0(){A.fG(A.dI(u.k,0,null))},
@@ -64453,7 +64453,7 @@ q=$.bp.a
 p=A.d6(25)
 return A.cf(A.a([B.fA,B.fD,m,s,r,A.j3(A.eA(A.aU("See More!",$.hB.fc(15),B.Z,o),q,o,o,o,o,new A.a0x(),B.cC,new A.bS(p,B.n),o),o,o)],t.p),B.Y,B.q,B.o)}}
 A.a0w.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e1[c],B.h6[c],B.h3[c],B.h7[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e1[c],B.h7[c],B.h4[c],B.h1[c],null),null)},
 $S:38}
 A.a0x.prototype={
 $0(){A.fG(A.dI(u.k,0,null))},
@@ -64470,7 +64470,7 @@ p=$.bp.a
 o=A.d6(25)
 return A.cf(A.a([B.fA,B.fD,s,r,q,A.j3(A.eA(A.aU("See More!",$.hB.fc(20),B.Z,n),p,n,n,n,n,new A.a0z(),B.cC,new A.bS(o,B.n),n),n,n)],t.p),B.Y,B.q,B.o)}}
 A.a0y.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e1[c],B.h6[c],B.h3[c],B.h7[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iJ(B.e1[c],B.h7[c],B.h4[c],B.h1[c],null),null)},
 $S:38}
 A.a0z.prototype={
 $0(){A.fG(A.dI(u.k,0,null))},
@@ -64535,7 +64535,7 @@ r.toString
 q=new A.h7(B.e3,t.ly)
 return A.bW(p,A.cf(A.a([B.fy,B.fB,r,A.a7p(B.eR,q.gde(q).dT(0,new A.a3C(),t.m1).cY(0),B.vV,n.a.b*0.05,o.a.a*0.05)],t.p),B.Y,B.q,B.o),p,p,p,p,new A.aF(s,0,s,0),p)}}
 A.a3C.prototype={
-$1(a){return new A.iN(B.e3[a.gc2(a)],B.h1[a.gc2(a)],B.h2[a.gc2(a)],null)},
+$1(a){return new A.iN(B.e3[a.gc2(a)],B.h2[a.gc2(a)],B.h3[a.gc2(a)],null)},
 $S:406}
 A.I2.prototype={
 E(a){var s=t.w,r=a.I(s).f.a.b
@@ -64544,7 +64544,7 @@ s=$.bt
 s.toString
 return A.cf(A.a([B.fy,B.fB,s,A.BS(new A.a3D(),4,A.BR(!0,B.aK,B.aT,B.c0,!1,!0,r>700?r*0.38:r*0.5,0.65))],t.p),B.Y,B.q,B.o)}}
 A.a3D.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e3[c],B.h1[c],B.h2[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e3[c],B.h2[c],B.h3[c],null),null)},
 $S:38}
 A.I3.prototype={
 E(a){var s,r=t.w,q=a.I(r).f.a.b
@@ -64553,7 +64553,7 @@ s=$.bt
 s.toString
 return A.cf(A.a([B.fy,B.fB,s,A.BS(new A.a3E(),4,A.BR(!0,B.aK,B.aT,B.c0,!1,!0,r.a.a<750?q*0.45:q*0.3,0.55))],t.p),B.Y,B.q,B.o)}}
 A.a3E.prototype={
-$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e3[c],B.h1[c],B.h2[c],null),null)},
+$3(a,b,c){return new A.bD(B.dL,new A.iN(B.e3[c],B.h2[c],B.h3[c],null),null)},
 $S:38}
 A.iN.prototype={
 ae(){return new A.O6(new A.bj(null,t.Fa),B.j)}}
@@ -64723,7 +64723,7 @@ A.a0r.prototype={
 $0(){this.a.d=!1},
 $S:0}
 A.Ip.prototype={
-E(a){var s=A.ed(a,!0,t.Q),r=$.b_,q=new A.h7(B.CX,t.ly)
+E(a){var s=A.ed(a,!0,t.Q),r=$.b_,q=new A.h7(B.Cr,t.ly)
 return A.a7p(B.eR,q.gde(q).dT(0,new A.a5H(a,s),t.iF).cY(0),B.vU,r*10*0.77+10,0)}}
 A.a5H.prototype={
 $1(a){var s,r,q,p,o,n=null,m=this.a,l=t.w
@@ -64741,7 +64741,7 @@ return new A.bD(s,A.ajV(B.dE,$.bp.a,new A.oR(q,o,p,n),m,new A.a5G(a),r*12*0.77+1
 $S:113}
 A.a5G.prototype={
 $0(){var s=this.a
-return A.fG(A.dI(B.CS[s.gc2(s)],0,null))},
+return A.fG(A.dI(B.CT[s.gc2(s)],0,null))},
 $S:0}
 A.cE.prototype={
 E(a){return A.cd(A.a([A.oQ(B.Ay,$.bp.a,$.b_*3*0.77+3),A.aU(" "+this.c+" ",$.Bl,null,null)],t.p),B.q,B.o)}}
@@ -67824,7 +67824,7 @@ B.U=new A.Jd()
 B.bU=new A.a7f()
 B.B=new A.z(0,0,0,0)
 B.eN=new A.Jk(0,0,0,0)
-B.CB=A.a(s([]),A.ae("w<TR>"))
+B.CC=A.a(s([]),A.ae("w<TR>"))
 B.lR=new A.Jh()
 B.e4=A.a(s([]),t.s)
 B.F5=new A.b8(0,{},B.e4,t.li)
@@ -68217,6 +68217,7 @@ B.AB=new A.cK(59122,"MaterialIcons",null)
 B.At=new A.cK(57622,"MaterialIcons",null)
 B.AA=new A.cK(58913,"MaterialIcons",null)
 B.Bh=A.a(s([B.Av,B.Ax,B.AB,B.At,B.AA]),t.G1)
+B.h1=A.a(s(["https://www.linkedin.com/posts/siddheshgunjal_python-ml-keras-activity-7019906325933400064-Fju0?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_emotionai-emodetect-emotiontracking-activity-7097494709224271872-HlfY?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_ai-deeplearning-cybersecurity-activity-6827897161070514176-BM6Y?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_webar-computervision-ecommerce-activity-7092418735092772865-1WR9?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_realestate-realestatebusiness-webar-activity-7096732185600172032-2hmF?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1kupwBg3tG1ltc2CHdaesOVQ_FoOx4TTw/view?usp=share_link","https://drive.google.com/file/d/1C524djF-VH1C5enz_D-jOVgGz5WstbwK/view?usp=share_link","https://drive.google.com/file/d/14dc8kKYCKulc4f_K6F_sEg5xNDBGppl3/view?usp=share_link","https://drive.google.com/file/d/1tQM3mkNG2AnEn06QjoR2-KSUcy_55gEx/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_computervision-vr-ar-activity-6693559090808975360-8N8T?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_automobiles-extendedreality-augmentedreality-activity-6835547416591167488-W_nI?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1L3fLWhPIfQ6Kb23xR2WXoOw_XfZfYLF8/view?usp=share_link"]),t.s)
 B.Bj=A.a(s([0,1]),t.F)
 B.Bk=A.a(s([0,6,12,18]),t.t)
 B.Ad=new A.fc(1)
@@ -68276,7 +68277,7 @@ B.kX=new A.cw(17,"WSegSpace")
 B.vS=new A.cw(18,"Unknown")
 B.C4=A.a(s([B.kU,B.cm,B.ad,B.eP,B.eQ,B.kY,B.dv,B.Ns,B.dw,B.dx,B.aQ,B.kV,B.kW,B.dt,B.bj,B.eO,B.du,B.kX,B.vS]),A.ae("w<cw>"))
 B.mM=A.a(s([0,0,26624,1023,65534,2047,65534,2047]),t.t)
-B.h1=A.a(s(["Professional Support","ML Development","Web3D Development","Native AR/VR"]),t.s)
+B.h2=A.a(s(["Professional Support","ML Development","Web3D Development","Native AR/VR"]),t.s)
 B.Da=new A.kH("en","US")
 B.mN=A.a(s([B.Da]),t.ss)
 B.l3=new A.re(0,"named")
@@ -68292,7 +68293,7 @@ B.mP=A.a(s([B.fQ,B.dT,B.cJ,B.dW,B.e_,B.c4,B.mG,B.h0,B.aD,B.e0,B.bF,B.cG,B.cH,B.d
 B.mQ=A.a(s(["HOME","ABOUT","SERVICES","PORTFOLIO","CONTACT"]),t.s)
 B.wc=new A.k7("Age","26",null)
 B.mR=A.a(s([B.la,B.wc]),t.p)
-B.h2=A.a(s(["Professional Consultation/Guidance\n- Industry Expert Support\n- ML Deployment Consultation \n- Teaching and more...!","End-to-End ML development\n- TensorFlow\n- PyTorch\n- MobileML\n- MLOps and more...!","Complete Web3D solution\n- WebAR for E-commerce\n- Web3D for your Website\n- Virtual Tour WebApp\n- WebAR enabled Physical store","Native AR/VR Application Development\n- Dedicated VR Environment\n- Optimised for SteamVR Devices\n- Optimised For Mobile"]),t.s)
+B.h3=A.a(s(["Professional Consultation/Guidance\n- Industry Expert Support\n- ML Deployment Consultation \n- Teaching and more...!","End-to-End ML development\n- TensorFlow\n- PyTorch\n- MobileML\n- MLOps and more...!","Complete Web3D solution\n- WebAR for E-commerce\n- Web3D for your Website\n- Virtual Tour WebApp\n- WebAR enabled Physical store","Native AR/VR Application Development\n- Dedicated VR Environment\n- Optimised for SteamVR Devices\n- Optimised For Mobile"]),t.s)
 B.An=new A.EK(null)
 B.wg=new A.B6(null)
 B.Hh=new A.I4(null)
@@ -68300,36 +68301,36 @@ B.Ga=new A.GS(null)
 B.zh=new A.CJ(null)
 B.Ah=new A.Et(null)
 B.Cq=A.a(s([B.An,B.wg,B.Hh,B.Ga,B.zh,B.Ah]),t.p)
-B.Cr=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
-B.Ct=A.a(s(["click","scroll"]),t.s)
+B.Cr=A.a(s(["https://img.icons8.com/metro/308/ffffff/linkedin.png","https://img.icons8.com/material-rounded/384/ffffff/github.png","https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png","https://img.icons8.com/ios-filled/50/twitterx.png","https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/000000/external-mastodon-is-an-online-self-hosted-social-media-and-social-networking-service-logo-bold-tal-revivo.png"]),t.s)
+B.Cs=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
+B.Cu=A.a(s(["click","scroll"]),t.s)
 B.mS=A.a(s(["Book an Appointment","Connect on Telegram","siddhu19@live.com"]),t.s)
-B.h3=A.a(s(["Slackker is a python package for monitoring your Model training status in real-time on slack & telegram. It can send you update for your ML model training progress and send final report with graphs when the training is finished.","Emo-Detect is a standalone (Windows/MacOS/Linux) application with the capability to track user's emotions in the background with specified interval throughout the day/session. Admin can later visualise the emotion distribution for particular user through admin portal in the app itself. This app is optimized to run in the background with minimal CPU usage.","This application will track all the faces that CCTV captures in realtime. It will track all the faces from all camera feeds and saves the Best face position and assigns unique UUID to each face tracked and saved in database. This can be later combined with face clustering system to track the person.","This is WebAR application can be integrated into any website. This AR menu will allow website visitors to interact with the menu items in an immersive and interactive way using their handheld devices. The menu is compatible with all handheld devices, and it will allow users to view and interact with 3D models of the products or services. ","The project was to develop a WebAR application that can be integrated with any brochure for a real estate company. This AR enabled brochure will provide an immersive and interactive experience for potential buyers to explore properties in a unique and engaging way. This will allow users to view 3D models of properties, explore floor plans of the properties.","AR packaging is WebAR product packaging solution for a company that wants to provide an immersive and interactive experience for their customers. The WebAR product packaging will be designed to showcase the product's features, benefits, and even provide instructions on how to use the product.","This WebApp takes advantage of Android's ARCore for spatial computing of the surroundings to detect planes and objects. This WebApp aims to provide an innovative and engaging way for you to explore and learn about places, things, etc. leading to increased engagement and improved customer satisfaction.","Dental 3D is a WebApp that provides an interactive experience for patients to explore and learn about dental procedures and their dental structure. It uses 3D modeling and optimised rendering technology to create realistic and detailed simulation of dental procedures, allowing better patient engagement and understanding of dental procedures.","Invoice vision is a WebApp that uses computer vision to automatically detect and extract relevant information from invoices, such as the vendor name, invoice number, date, particulars, their amount and total amount. This will streamline the invoicing process, reducing the need for manual data entry and saving time and resources for businesses.","With this application we can interact with any 3D environment (Hologram, Mixed Reality object, etc.) with natural human motions/gestures. The motion control system for holograms can be used in many places such as Museums, historical places, etc. to provide an intuitive and immersive experience for users, allowing them to interact with holograms in a unique and engaging way.","The AR car showroom solution will allow customers to access the showroom through their mobile devices and interact with 3D models of cars. Customers will be able to explore the exterior and interior of cars, customize the colors and features, and learn about the car's specifications and features. This solution is developed with Unity Engine.","RatLab is a VR based rat dissection tool for education, allowing students to learn about rat anatomy, physiology and get and hands on experience to conduct an operation. This will help students to get an idea of correct procedure to follow during and actual dissection/operation and build their confidence to get ready to conduct an operation in real life. "]),t.s)
-B.Cu=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.F)
+B.h4=A.a(s(["Slackker is a python package for monitoring your Model training status in real-time on slack & telegram. It can send you update for your ML model training progress and send final report with graphs when the training is finished.","Emo-Detect is a standalone (Windows/MacOS/Linux) application with the capability to track user's emotions in the background with specified interval throughout the day/session. Admin can later visualise the emotion distribution for particular user through admin portal in the app itself. This app is optimized to run in the background with minimal CPU usage.","This application will track all the faces that CCTV captures in realtime. It will track all the faces from all camera feeds and saves the Best face position and assigns unique UUID to each face tracked and saved in database. This can be later combined with face clustering system to track the person.","This is WebAR application can be integrated into any website. This AR menu will allow website visitors to interact with the menu items in an immersive and interactive way using their handheld devices. The menu is compatible with all handheld devices, and it will allow users to view and interact with 3D models of the products or services. ","The project was to develop a WebAR application that can be integrated with any brochure for a real estate company. This AR enabled brochure will provide an immersive and interactive experience for potential buyers to explore properties in a unique and engaging way. This will allow users to view 3D models of properties, explore floor plans of the properties.","AR packaging is WebAR product packaging solution for a company that wants to provide an immersive and interactive experience for their customers. The WebAR product packaging will be designed to showcase the product's features, benefits, and even provide instructions on how to use the product.","This WebApp takes advantage of Android's ARCore for spatial computing of the surroundings to detect planes and objects. This WebApp aims to provide an innovative and engaging way for you to explore and learn about places, things, etc. leading to increased engagement and improved customer satisfaction.","Dental 3D is a WebApp that provides an interactive experience for patients to explore and learn about dental procedures and their dental structure. It uses 3D modeling and optimised rendering technology to create realistic and detailed simulation of dental procedures, allowing better patient engagement and understanding of dental procedures.","Invoice vision is a WebApp that uses computer vision to automatically detect and extract relevant information from invoices, such as the vendor name, invoice number, date, particulars, their amount and total amount. This will streamline the invoicing process, reducing the need for manual data entry and saving time and resources for businesses.","With this application we can interact with any 3D environment (Hologram, Mixed Reality object, etc.) with natural human motions/gestures. The motion control system for holograms can be used in many places such as Museums, historical places, etc. to provide an intuitive and immersive experience for users, allowing them to interact with holograms in a unique and engaging way.","The AR car showroom solution will allow customers to access the showroom through their mobile devices and interact with 3D models of cars. Customers will be able to explore the exterior and interior of cars, customize the colors and features, and learn about the car's specifications and features. This solution is developed with Unity Engine.","RatLab is a VR based rat dissection tool for education, allowing students to learn about rat anatomy, physiology and get and hands on experience to conduct an operation. This will help students to get an idea of correct procedure to follow during and actual dissection/operation and build their confidence to get ready to conduct an operation in real life. "]),t.s)
+B.Cv=A.a(s([0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0]),t.F)
 B.mW=A.a(s([]),A.ae("w<aAL>"))
-B.Cv=A.a(s([]),t.Zb)
+B.Cw=A.a(s([]),t.Zb)
 B.OP=A.a(s([]),t.ss)
-B.CA=A.a(s([]),t.tc)
+B.CB=A.a(s([]),t.tc)
 B.cO=A.a(s([]),t.f)
 B.mV=A.a(s([]),t.fy)
-B.CC=A.a(s([]),A.ae("w<agz<@>>"))
-B.CE=A.a(s([]),t.D1)
-B.h4=A.a(s([]),t.T)
+B.CD=A.a(s([]),A.ae("w<agz<@>>"))
+B.CF=A.a(s([]),t.D1)
+B.h5=A.a(s([]),t.T)
 B.a4=A.a(s([]),t.oU)
-B.CD=A.a(s([]),t.Lx)
+B.CE=A.a(s([]),t.Lx)
 B.OQ=A.a(s([]),t.p)
 B.e5=A.a(s([]),t.t)
 B.mT=A.a(s([]),t.ee)
-B.CG=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
-B.h5=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
-B.h6=A.a(s(["Slackker (Open Source)","Emo-Detect","AI assisted CCTV","WebAR Menu","Interactive Brochure","AR Packaging","Spatial AR on Web","Dental 3D","Invoice Vision","Motion controlled Holograms","AR Car Showroom","RatLab"]),t.s)
-B.h7=A.a(s(["https://www.linkedin.com/posts/siddheshgunjal_python-ml-keras-activity-7019906325933400064-Fju0?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1CTOZ2c1Ih44FDLJw7FJYjHUmWyqjcPEC/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_ai-deeplearning-cybersecurity-activity-6827897161070514176-BM6Y?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_webar-computervision-ecommerce-activity-7092418735092772865-1WR9?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_realestate-realestatebusiness-webar-activity-7096732185600172032-2hmF?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1kupwBg3tG1ltc2CHdaesOVQ_FoOx4TTw/view?usp=share_link","https://drive.google.com/file/d/1C524djF-VH1C5enz_D-jOVgGz5WstbwK/view?usp=share_link","https://drive.google.com/file/d/14dc8kKYCKulc4f_K6F_sEg5xNDBGppl3/view?usp=share_link","https://drive.google.com/file/d/1tQM3mkNG2AnEn06QjoR2-KSUcy_55gEx/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_computervision-vr-ar-activity-6693559090808975360-8N8T?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_automobiles-extendedreality-augmentedreality-activity-6835547416591167488-W_nI?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1L3fLWhPIfQ6Kb23xR2WXoOw_XfZfYLF8/view?usp=share_link"]),t.s)
+B.CH=A.a(s([0,0,32722,12287,65534,34815,65534,18431]),t.t)
+B.h6=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
+B.h7=A.a(s(["Slackker (Open Source)","Emo-Detect","AI assisted CCTV","WebAR Menu","Interactive Brochure","AR Packaging","Spatial AR on Web","Dental 3D","Invoice Vision","Motion controlled Holograms","AR Car Showroom","RatLab"]),t.s)
 B.wd=new A.k7("From","Navi Mumbai, India",null)
-B.CJ=A.a(s([B.f4,B.wd]),t.p)
+B.CK=A.a(s([B.f4,B.wd]),t.p)
 B.aH=new A.fC(0,"leading")
 B.as=new A.fC(1,"title")
 B.at=new A.fC(2,"subtitle")
 B.b1=new A.fC(3,"trailing")
-B.CL=A.a(s([B.aH,B.as,B.at,B.b1]),A.ae("w<fC>"))
+B.CM=A.a(s([B.aH,B.as,B.at,B.b1]),A.ae("w<fC>"))
 B.e6=A.a(s([0,0,24576,1023,65534,34815,65534,18431]),t.t)
 B.vW=new A.nw(0,"topLeft")
 B.vZ=new A.nw(3,"bottomRight")
@@ -68339,7 +68340,7 @@ B.vX=new A.nw(1,"topRight")
 B.vY=new A.nw(2,"bottomLeft")
 B.ND=new A.jO(B.vX,B.vY)
 B.NE=new A.jO(B.vY,B.vX)
-B.CM=A.a(s([B.NC,B.NF,B.ND,B.NE]),A.ae("w<jO>"))
+B.CN=A.a(s([B.NC,B.NF,B.ND,B.NE]),A.ae("w<jO>"))
 B.yL=new A.E(4284790262)
 B.yH=new A.E(4282557941)
 B.yA=new A.E(4279592384)
@@ -68359,33 +68360,32 @@ B.yB=new A.E(4279983648)
 B.ES=new A.bw([50,B.yX,100,B.yT,200,B.yP,300,B.yO,400,B.yM,500,B.yK,600,B.yI,700,B.yG,800,B.yF,900,B.yB],t.pl)
 B.Fl=new A.mu(B.ES,4283215696)
 B.OR=A.a(s([B.k,B.c5,B.i,B.bI,B.Fl]),t.t_)
-B.CN=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
+B.CO=A.a(s([0,0,32754,11263,65534,34815,65534,18431]),t.t)
 B.mY=A.a(s([0,0,65490,12287,65535,34815,65534,18431]),t.t)
 B.Bn=A.a(s([137,80,78,71,13,10,26,10]),t.Z)
 B.AS=new A.ja(B.Bn,"image/png")
-B.CV=A.a(s([71,73,70,56,55,97]),t.Z)
-B.AQ=new A.ja(B.CV,"image/gif")
-B.CW=A.a(s([71,73,70,56,57,97]),t.Z)
-B.AR=new A.ja(B.CW,"image/gif")
+B.CW=A.a(s([71,73,70,56,55,97]),t.Z)
+B.AQ=new A.ja(B.CW,"image/gif")
+B.CX=A.a(s([71,73,70,56,57,97]),t.Z)
+B.AR=new A.ja(B.CX,"image/gif")
 B.Bl=A.a(s([255,216,255]),t.Z)
 B.AO=new A.ja(B.Bl,"image/jpeg")
 B.Cn=A.a(s([82,73,70,70,null,null,null,null,87,69,66,80]),t.Z)
 B.AP=new A.ja(B.Cn,"image/webp")
 B.BV=A.a(s([66,77]),t.Z)
 B.AN=new A.ja(B.BV,"image/bmp")
-B.CP=A.a(s([B.AS,B.AQ,B.AR,B.AO,B.AP,B.AN]),A.ae("w<ja>"))
+B.CQ=A.a(s([B.AS,B.AQ,B.AR,B.AO,B.AP,B.AN]),A.ae("w<ja>"))
 B.kN=new A.iu(0,"left")
 B.vt=new A.iu(1,"right")
 B.Z=new A.iu(2,"center")
 B.eK=new A.iu(3,"justify")
 B.bf=new A.iu(4,"start")
 B.vu=new A.iu(5,"end")
-B.CQ=A.a(s([B.kN,B.vt,B.Z,B.eK,B.bf,B.vu]),A.ae("w<iu>"))
+B.CR=A.a(s([B.kN,B.vt,B.Z,B.eK,B.bf,B.vu]),A.ae("w<iu>"))
 B.h8=A.a(s([!0,!1]),t.HZ)
-B.CS=A.a(s([u.v,"https://github.com/siddheshgunjal","https://medium.com/@siddheshgunjal82","https://twitter.com/gunjal_siddhesh","https://mastodon.social/@siddhu_"]),t.s)
+B.CT=A.a(s([u.v,"https://github.com/siddheshgunjal","https://medium.com/@siddheshgunjal82","https://twitter.com/gunjal_siddhesh","https://mastodon.social/@siddhu_"]),t.s)
 B.wb=new A.k7("From","Mumbai, India",null)
-B.CU=A.a(s([B.f4,B.wb]),t.p)
-B.CX=A.a(s(["https://img.icons8.com/metro/308/ffffff/linkedin.png","https://img.icons8.com/material-rounded/384/ffffff/github.png","https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png","https://img.icons8.com/android/480/ffffff/twitter.png","https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/000000/external-mastodon-is-an-online-self-hosted-social-media-and-social-networking-service-logo-bold-tal-revivo.png"]),t.s)
+B.CV=A.a(s([B.f4,B.wb]),t.p)
 B.D5=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.Ar=new A.uo(61664,"FontAwesomeSolid","font_awesome_flutter")
 B.n_=A.a(s([B.mz,B.my,B.Ar]),t.G1)
@@ -68420,8 +68420,8 @@ B.BL=A.a(s(["KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ
 B.ht=new A.b8(47,{KeyA:"a",KeyB:"b",KeyC:"c",KeyD:"d",KeyE:"e",KeyF:"f",KeyG:"g",KeyH:"h",KeyI:"i",KeyJ:"j",KeyK:"k",KeyL:"l",KeyM:"m",KeyN:"n",KeyO:"o",KeyP:"p",KeyQ:"q",KeyR:"r",KeyS:"s",KeyT:"t",KeyU:"u",KeyV:"v",KeyW:"w",KeyX:"x",KeyY:"y",KeyZ:"z",Digit1:"1",Digit2:"2",Digit3:"3",Digit4:"4",Digit5:"5",Digit6:"6",Digit7:"7",Digit8:"8",Digit9:"9",Digit0:"0",Minus:"-",Equal:"=",BracketLeft:"[",BracketRight:"]",Backslash:"\\",Semicolon:";",Quote:"'",Backquote:"`",Comma:",",Period:".",Slash:"/"},B.BL,t.li)
 B.C5=A.a(s(["Abort","Again","AltLeft","AltRight","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","AudioVolumeDown","AudioVolumeMute","AudioVolumeUp","Backquote","Backslash","Backspace","BracketLeft","BracketRight","BrightnessDown","BrightnessUp","BrowserBack","BrowserFavorites","BrowserForward","BrowserHome","BrowserRefresh","BrowserSearch","BrowserStop","CapsLock","Comma","ContextMenu","ControlLeft","ControlRight","Convert","Copy","Cut","Delete","Digit0","Digit1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9","DisplayToggleIntExt","Eject","End","Enter","Equal","Esc","Escape","F1","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F2","F20","F21","F22","F23","F24","F3","F4","F5","F6","F7","F8","F9","Find","Fn","FnLock","GameButton1","GameButton10","GameButton11","GameButton12","GameButton13","GameButton14","GameButton15","GameButton16","GameButton2","GameButton3","GameButton4","GameButton5","GameButton6","GameButton7","GameButton8","GameButton9","GameButtonA","GameButtonB","GameButtonC","GameButtonLeft1","GameButtonLeft2","GameButtonMode","GameButtonRight1","GameButtonRight2","GameButtonSelect","GameButtonStart","GameButtonThumbLeft","GameButtonThumbRight","GameButtonX","GameButtonY","GameButtonZ","Help","Home","Hyper","Insert","IntlBackslash","IntlRo","IntlYen","KanaMode","KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ","KeyK","KeyL","KeyM","KeyN","KeyO","KeyP","KeyQ","KeyR","KeyS","KeyT","KeyU","KeyV","KeyW","KeyX","KeyY","KeyZ","KeyboardLayoutSelect","Lang1","Lang2","Lang3","Lang4","Lang5","LaunchApp1","LaunchApp2","LaunchAssistant","LaunchControlPanel","LaunchMail","LaunchScreenSaver","MailForward","MailReply","MailSend","MediaFastForward","MediaPause","MediaPlay","MediaPlayPause","MediaRecord","MediaRewind","MediaSelect","MediaStop","MediaTrackNext","MediaTrackPrevious","MetaLeft","MetaRight","MicrophoneMuteToggle","Minus","NonConvert","NumLock","Numpad0","Numpad1","Numpad2","Numpad3","Numpad4","Numpad5","Numpad6","Numpad7","Numpad8","Numpad9","NumpadAdd","NumpadBackspace","NumpadClear","NumpadClearEntry","NumpadComma","NumpadDecimal","NumpadDivide","NumpadEnter","NumpadEqual","NumpadMemoryAdd","NumpadMemoryClear","NumpadMemoryRecall","NumpadMemoryStore","NumpadMemorySubtract","NumpadMultiply","NumpadParenLeft","NumpadParenRight","NumpadSubtract","Open","PageDown","PageUp","Paste","Pause","Period","Power","PrintScreen","PrivacyScreenToggle","Props","Quote","Resume","ScrollLock","Select","SelectTask","Semicolon","ShiftLeft","ShiftRight","ShowAllWindows","Slash","Sleep","Space","Super","Suspend","Tab","Turbo","Undo","WakeUp","ZoomToggle"]),t.s)
 B.EP=new A.b8(231,{Abort:458907,Again:458873,AltLeft:458978,AltRight:458982,ArrowDown:458833,ArrowLeft:458832,ArrowRight:458831,ArrowUp:458834,AudioVolumeDown:458881,AudioVolumeMute:458879,AudioVolumeUp:458880,Backquote:458805,Backslash:458801,Backspace:458794,BracketLeft:458799,BracketRight:458800,BrightnessDown:786544,BrightnessUp:786543,BrowserBack:786980,BrowserFavorites:786986,BrowserForward:786981,BrowserHome:786979,BrowserRefresh:786983,BrowserSearch:786977,BrowserStop:786982,CapsLock:458809,Comma:458806,ContextMenu:458853,ControlLeft:458976,ControlRight:458980,Convert:458890,Copy:458876,Cut:458875,Delete:458828,Digit0:458791,Digit1:458782,Digit2:458783,Digit3:458784,Digit4:458785,Digit5:458786,Digit6:458787,Digit7:458788,Digit8:458789,Digit9:458790,DisplayToggleIntExt:65717,Eject:786616,End:458829,Enter:458792,Equal:458798,Esc:458793,Escape:458793,F1:458810,F10:458819,F11:458820,F12:458821,F13:458856,F14:458857,F15:458858,F16:458859,F17:458860,F18:458861,F19:458862,F2:458811,F20:458863,F21:458864,F22:458865,F23:458866,F24:458867,F3:458812,F4:458813,F5:458814,F6:458815,F7:458816,F8:458817,F9:458818,Find:458878,Fn:18,FnLock:19,GameButton1:392961,GameButton10:392970,GameButton11:392971,GameButton12:392972,GameButton13:392973,GameButton14:392974,GameButton15:392975,GameButton16:392976,GameButton2:392962,GameButton3:392963,GameButton4:392964,GameButton5:392965,GameButton6:392966,GameButton7:392967,GameButton8:392968,GameButton9:392969,GameButtonA:392977,GameButtonB:392978,GameButtonC:392979,GameButtonLeft1:392980,GameButtonLeft2:392981,GameButtonMode:392982,GameButtonRight1:392983,GameButtonRight2:392984,GameButtonSelect:392985,GameButtonStart:392986,GameButtonThumbLeft:392987,GameButtonThumbRight:392988,GameButtonX:392989,GameButtonY:392990,GameButtonZ:392991,Help:458869,Home:458826,Hyper:16,Insert:458825,IntlBackslash:458852,IntlRo:458887,IntlYen:458889,KanaMode:458888,KeyA:458756,KeyB:458757,KeyC:458758,KeyD:458759,KeyE:458760,KeyF:458761,KeyG:458762,KeyH:458763,KeyI:458764,KeyJ:458765,KeyK:458766,KeyL:458767,KeyM:458768,KeyN:458769,KeyO:458770,KeyP:458771,KeyQ:458772,KeyR:458773,KeyS:458774,KeyT:458775,KeyU:458776,KeyV:458777,KeyW:458778,KeyX:458779,KeyY:458780,KeyZ:458781,KeyboardLayoutSelect:787101,Lang1:458896,Lang2:458897,Lang3:458898,Lang4:458899,Lang5:458900,LaunchApp1:786836,LaunchApp2:786834,LaunchAssistant:786891,LaunchControlPanel:786847,LaunchMail:786826,LaunchScreenSaver:786865,MailForward:787083,MailReply:787081,MailSend:787084,MediaFastForward:786611,MediaPause:786609,MediaPlay:786608,MediaPlayPause:786637,MediaRecord:786610,MediaRewind:786612,MediaSelect:786819,MediaStop:786615,MediaTrackNext:786613,MediaTrackPrevious:786614,MetaLeft:458979,MetaRight:458983,MicrophoneMuteToggle:24,Minus:458797,NonConvert:458891,NumLock:458835,Numpad0:458850,Numpad1:458841,Numpad2:458842,Numpad3:458843,Numpad4:458844,Numpad5:458845,Numpad6:458846,Numpad7:458847,Numpad8:458848,Numpad9:458849,NumpadAdd:458839,NumpadBackspace:458939,NumpadClear:458968,NumpadClearEntry:458969,NumpadComma:458885,NumpadDecimal:458851,NumpadDivide:458836,NumpadEnter:458840,NumpadEqual:458855,NumpadMemoryAdd:458963,NumpadMemoryClear:458962,NumpadMemoryRecall:458961,NumpadMemoryStore:458960,NumpadMemorySubtract:458964,NumpadMultiply:458837,NumpadParenLeft:458934,NumpadParenRight:458935,NumpadSubtract:458838,Open:458868,PageDown:458830,PageUp:458827,Paste:458877,Pause:458824,Period:458807,Power:458854,PrintScreen:458822,PrivacyScreenToggle:23,Props:458915,Quote:458804,Resume:21,ScrollLock:458823,Select:458871,SelectTask:786850,Semicolon:458803,ShiftLeft:458977,ShiftRight:458981,ShowAllWindows:787103,Slash:458808,Sleep:65666,Space:458796,Super:17,Suspend:20,Tab:458795,Turbo:22,Undo:458874,WakeUp:65667,ZoomToggle:786994},B.C5,t.eL)
-B.CR=A.a(s(["type"]),t.s)
-B.EV=new A.b8(1,{type:"line"},B.CR,t.li)
+B.CS=A.a(s(["type"]),t.s)
+B.EV=new A.b8(1,{type:"line"},B.CS,t.li)
 B.tb=new A.j(16)
 B.tc=new A.j(17)
 B.d6=new A.j(18)
@@ -68696,18 +68696,18 @@ B.Co=A.a(s(["in","iw","ji","jw","mo","aam","adp","aue","ayx","bgm","bjd","ccq","
 B.aW=new A.b8(78,{in:"id",iw:"he",ji:"yi",jw:"jv",mo:"ro",aam:"aas",adp:"dz",aue:"ktz",ayx:"nun",bgm:"bcg",bjd:"drl",ccq:"rki",cjr:"mom",cka:"cmr",cmk:"xch",coy:"pij",cqu:"quh",drh:"khk",drw:"prs",gav:"dev",gfx:"vaj",ggn:"gvr",gti:"nyc",guv:"duz",hrr:"jal",ibi:"opa",ilw:"gal",jeg:"oyb",kgc:"tdf",kgh:"kml",koj:"kwv",krm:"bmf",ktr:"dtp",kvs:"gdj",kwq:"yam",kxe:"tvd",kzj:"dtp",kzt:"dtp",lii:"raq",lmm:"rmx",meg:"cir",mst:"mry",mwj:"vaj",myt:"mry",nad:"xny",ncp:"kdz",nnx:"ngv",nts:"pij",oun:"vaj",pcr:"adx",pmc:"huw",pmu:"phr",ppa:"bfy",ppr:"lcq",pry:"prt",puz:"pub",sca:"hle",skk:"oyb",tdu:"dtp",thc:"tpo",thx:"oyb",tie:"ras",tkk:"twm",tlw:"weo",tmp:"tyj",tne:"kak",tnf:"prs",tsf:"taj",uok:"ema",xba:"cax",xia:"acn",xkh:"waw",xsj:"suj",ybd:"rki",yma:"lrr",ymt:"mtm",yos:"zom",yuu:"yug"},B.Co,t.li)
 B.OS=new A.bw([9,B.en,10,B.i1,11,B.i2,12,B.i3,13,B.i4,14,B.i5,15,B.i6,16,B.i7,17,B.i8,18,B.i9,19,B.ia,20,B.ig,21,B.ih,22,B.ic,23,B.id,24,B.hS,25,B.hY,26,B.hG,27,B.hT,28,B.hV,29,B.i_,30,B.hW,31,B.hK,32,B.hQ,33,B.hR,34,B.ii,35,B.ij,36,B.ib,37,B.bJ,38,B.hC,39,B.hU,40,B.hF,41,B.hH,42,B.hI,43,B.hJ,44,B.hL,45,B.hM,46,B.hN,47,B.il,48,B.im,49,B.io,50,B.bK,51,B.ik,52,B.i0,53,B.hZ,54,B.hE,55,B.hX,56,B.hD,57,B.hP,58,B.hO,59,B.ip,60,B.iq,61,B.ir,62,B.c8,63,B.iR,64,B.bL,65,B.ie,66,B.bs,67,B.is,68,B.it,69,B.iu,70,B.iv,71,B.iw,72,B.ix,73,B.iy,74,B.iz,75,B.iA,76,B.iB,77,B.d8,78,B.d7,79,B.j0,80,B.j1,81,B.j2,82,B.iS,83,B.iY,84,B.iZ,85,B.j_,86,B.iT,87,B.iV,88,B.iW,89,B.iX,90,B.j3,91,B.j4,93,B.jH,94,B.j5,95,B.iC,96,B.iD,97,B.jy,98,B.jF,99,B.jG,100,B.jB,101,B.jz,102,B.jC,104,B.iU,105,B.c7,106,B.iQ,107,B.iE,108,B.bt,110,B.iH,111,B.iP,112,B.iI,113,B.iN,114,B.iM,115,B.iK,116,B.iO,117,B.iL,118,B.iG,119,B.iJ,121,B.ju,122,B.jw,123,B.jv,124,B.j7,125,B.j8,126,B.tU,127,B.iF,128,B.ki,129,B.jx,130,B.jD,131,B.jE,132,B.jA,133,B.bM,134,B.c9,135,B.j6,136,B.ka,137,B.jo,139,B.jp,140,B.jn,141,B.jr,142,B.jl,143,B.js,144,B.jt,145,B.jq,146,B.jm,148,B.k0,150,B.jK,151,B.jL,152,B.k1,158,B.ug,160,B.ui,163,B.k_,164,B.kc,166,B.k8,167,B.k9,169,B.jX,171,B.jU,172,B.jY,173,B.jV,174,B.jW,175,B.jR,176,B.jT,177,B.u5,179,B.jZ,180,B.k7,181,B.kb,182,B.u7,187,B.jI,188,B.jJ,189,B.un,190,B.ut,191,B.j9,192,B.ja,193,B.jb,194,B.jc,195,B.jd,196,B.je,197,B.jf,198,B.jg,199,B.jh,200,B.ji,201,B.jj,202,B.jk,209,B.jQ,214,B.uo,215,B.jP,216,B.jS,217,B.ub,218,B.uq,225,B.k6,232,B.jO,233,B.jN,235,B.jM,237,B.u3,238,B.u2,239,B.kg,240,B.ke,241,B.kf,242,B.up,243,B.uj,252,B.u1,256,B.hB,366,B.tX,370,B.u6,378,B.tY,380,B.kd,382,B.ul,400,B.um,405,B.uf,413,B.u4,418,B.u8,419,B.u9,426,B.ur,427,B.us,429,B.uc,431,B.ud,437,B.ue,439,B.tZ,440,B.uk,441,B.uh,587,B.k2,588,B.k3,589,B.k4,590,B.ua,591,B.k5,592,B.kh,600,B.u_,601,B.u0,641,B.hA],t.Vd)
 B.rT=new A.b8(0,{},B.cO,A.ae("b8<I,qS>"))
-B.Cw=A.a(s([]),t.g)
-B.F6=new A.b8(0,{},B.Cw,A.ae("b8<da,da>"))
-B.Cx=A.a(s([]),A.ae("w<n5>"))
-B.eh=new A.b8(0,{},B.Cx,A.ae("b8<n5,aS>"))
+B.Cx=A.a(s([]),t.g)
+B.F6=new A.b8(0,{},B.Cx,A.ae("b8<da,da>"))
+B.Cy=A.a(s([]),A.ae("w<n5>"))
+B.eh=new A.b8(0,{},B.Cy,A.ae("b8<n5,aS>"))
 B.F4=new A.b8(0,{},B.e4,A.ae("b8<r,@>"))
-B.Cy=A.a(s([]),A.ae("w<ne>"))
-B.rS=new A.b8(0,{},B.Cy,A.ae("b8<ne,@>"))
+B.Cz=A.a(s([]),A.ae("w<ne>"))
+B.rS=new A.b8(0,{},B.Cz,A.ae("b8<ne,@>"))
 B.mU=A.a(s([]),A.ae("w<eH>"))
 B.F3=new A.b8(0,{},B.mU,A.ae("b8<eH,cs>"))
 B.rU=new A.b8(0,{},B.mU,A.ae("b8<eH,md<cs>>"))
-B.CF=A.a(s(["alias","allScroll","basic","cell","click","contextMenu","copy","forbidden","grab","grabbing","help","move","none","noDrop","precise","progress","text","resizeColumn","resizeDown","resizeDownLeft","resizeDownRight","resizeLeft","resizeLeftRight","resizeRight","resizeRow","resizeUp","resizeUpDown","resizeUpLeft","resizeUpRight","resizeUpLeftDownRight","resizeUpRightDownLeft","verticalText","wait","zoomIn","zoomOut"]),t.s)
-B.F8=new A.b8(35,{alias:"alias",allScroll:"all-scroll",basic:"default",cell:"cell",click:"pointer",contextMenu:"context-menu",copy:"copy",forbidden:"not-allowed",grab:"grab",grabbing:"grabbing",help:"help",move:"move",none:"none",noDrop:"no-drop",precise:"crosshair",progress:"progress",text:"text",resizeColumn:"col-resize",resizeDown:"s-resize",resizeDownLeft:"sw-resize",resizeDownRight:"se-resize",resizeLeft:"w-resize",resizeLeftRight:"ew-resize",resizeRight:"e-resize",resizeRow:"row-resize",resizeUp:"n-resize",resizeUpDown:"ns-resize",resizeUpLeft:"nw-resize",resizeUpRight:"ne-resize",resizeUpLeftDownRight:"nwse-resize",resizeUpRightDownLeft:"nesw-resize",verticalText:"vertical-text",wait:"wait",zoomIn:"zoom-in",zoomOut:"zoom-out"},B.CF,t.li)
+B.CG=A.a(s(["alias","allScroll","basic","cell","click","contextMenu","copy","forbidden","grab","grabbing","help","move","none","noDrop","precise","progress","text","resizeColumn","resizeDown","resizeDownLeft","resizeDownRight","resizeLeft","resizeLeftRight","resizeRight","resizeRow","resizeUp","resizeUpDown","resizeUpLeft","resizeUpRight","resizeUpLeftDownRight","resizeUpRightDownLeft","verticalText","wait","zoomIn","zoomOut"]),t.s)
+B.F8=new A.b8(35,{alias:"alias",allScroll:"all-scroll",basic:"default",cell:"cell",click:"pointer",contextMenu:"context-menu",copy:"copy",forbidden:"not-allowed",grab:"grab",grabbing:"grabbing",help:"help",move:"move",none:"none",noDrop:"no-drop",precise:"crosshair",progress:"progress",text:"text",resizeColumn:"col-resize",resizeDown:"s-resize",resizeDownLeft:"sw-resize",resizeDownRight:"se-resize",resizeLeft:"w-resize",resizeLeftRight:"ew-resize",resizeRight:"e-resize",resizeRow:"row-resize",resizeUp:"n-resize",resizeUpDown:"ns-resize",resizeUpLeft:"nw-resize",resizeUpRight:"ne-resize",resizeUpLeftDownRight:"nwse-resize",resizeUpRightDownLeft:"nesw-resize",verticalText:"vertical-text",wait:"wait",zoomIn:"zoom-in",zoomOut:"zoom-out"},B.CG,t.li)
 B.cZ=new A.jg(0,"canvas")
 B.rY=new A.jg(1,"card")
 B.Fo=new A.jg(2,"circle")
@@ -69184,8 +69184,8 @@ B.Fc=new A.bw([32,B.n5,33,B.Du,34,B.Dv,35,B.Dw,36,B.Dx,37,B.Dy,38,B.Dz,39,B.DA,4
 B.mX=A.a(s(["AVRInput","AVRPower","Accel","Accept","Again","AllCandidates","Alphanumeric","AltGraph","AppSwitch","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","Attn","AudioBalanceLeft","AudioBalanceRight","AudioBassBoostDown","AudioBassBoostToggle","AudioBassBoostUp","AudioFaderFront","AudioFaderRear","AudioSurroundModeNext","AudioTrebleDown","AudioTrebleUp","AudioVolumeDown","AudioVolumeMute","AudioVolumeUp","Backspace","BrightnessDown","BrightnessUp","BrowserBack","BrowserFavorites","BrowserForward","BrowserHome","BrowserRefresh","BrowserSearch","BrowserStop","Call","Camera","CameraFocus","Cancel","CapsLock","ChannelDown","ChannelUp","Clear","Close","ClosedCaptionToggle","CodeInput","ColorF0Red","ColorF1Green","ColorF2Yellow","ColorF3Blue","ColorF4Grey","ColorF5Brown","Compose","ContextMenu","Convert","Copy","CrSel","Cut","DVR","Delete","Dimmer","DisplaySwap","Eisu","Eject","End","EndCall","Enter","EraseEof","Esc","Escape","ExSel","Execute","Exit","F1","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F2","F20","F21","F22","F23","F24","F3","F4","F5","F6","F7","F8","F9","FavoriteClear0","FavoriteClear1","FavoriteClear2","FavoriteClear3","FavoriteRecall0","FavoriteRecall1","FavoriteRecall2","FavoriteRecall3","FavoriteStore0","FavoriteStore1","FavoriteStore2","FavoriteStore3","FinalMode","Find","Fn","FnLock","GoBack","GoHome","GroupFirst","GroupLast","GroupNext","GroupPrevious","Guide","GuideNextDay","GuidePreviousDay","HangulMode","HanjaMode","Hankaku","HeadsetHook","Help","Hibernate","Hiragana","HiraganaKatakana","Home","Hyper","Info","Insert","InstantReplay","JunjaMode","KanaMode","KanjiMode","Katakana","Key11","Key12","LastNumberRedial","LaunchApplication1","LaunchApplication2","LaunchAssistant","LaunchCalendar","LaunchContacts","LaunchControlPanel","LaunchMail","LaunchMediaPlayer","LaunchMusicPlayer","LaunchPhone","LaunchScreenSaver","LaunchSpreadsheet","LaunchWebBrowser","LaunchWebCam","LaunchWordProcessor","Link","ListProgram","LiveContent","Lock","LogOff","MailForward","MailReply","MailSend","MannerMode","MediaApps","MediaAudioTrack","MediaClose","MediaFastForward","MediaLast","MediaPause","MediaPlay","MediaPlayPause","MediaRecord","MediaRewind","MediaSkip","MediaSkipBackward","MediaSkipForward","MediaStepBackward","MediaStepForward","MediaStop","MediaTopMenu","MediaTrackNext","MediaTrackPrevious","MicrophoneToggle","MicrophoneVolumeDown","MicrophoneVolumeMute","MicrophoneVolumeUp","ModeChange","NavigateIn","NavigateNext","NavigateOut","NavigatePrevious","New","NextCandidate","NextFavoriteChannel","NextUserProfile","NonConvert","Notification","NumLock","OnDemand","Open","PageDown","PageUp","Pairing","Paste","Pause","PinPDown","PinPMove","PinPToggle","PinPUp","Play","PlaySpeedDown","PlaySpeedReset","PlaySpeedUp","Power","PowerOff","PreviousCandidate","Print","PrintScreen","Process","Props","RandomToggle","RcLowBattery","RecordSpeedNext","Redo","RfBypass","Romaji","STBInput","STBPower","Save","ScanChannelsToggle","ScreenModeNext","ScrollLock","Select","Settings","ShiftLevel5","SingleCandidate","Soft1","Soft2","Soft3","Soft4","Soft5","Soft6","Soft7","Soft8","SpeechCorrectionList","SpeechInputToggle","SpellCheck","SplitScreenToggle","Standby","Subtitle","Super","Symbol","SymbolLock","TV","TV3DMode","TVAntennaCable","TVAudioDescription","TVAudioDescriptionMixDown","TVAudioDescriptionMixUp","TVContentsMenu","TVDataService","TVInput","TVInputComponent1","TVInputComponent2","TVInputComposite1","TVInputComposite2","TVInputHDMI1","TVInputHDMI2","TVInputHDMI3","TVInputHDMI4","TVInputVGA1","TVMediaContext","TVNetwork","TVNumberEntry","TVPower","TVRadioService","TVSatellite","TVSatelliteBS","TVSatelliteCS","TVSatelliteToggle","TVTerrestrialAnalog","TVTerrestrialDigital","TVTimer","Tab","Teletext","Undo","Unidentified","VideoModeNext","VoiceDial","WakeUp","Wink","Zenkaku","ZenkakuHankaku","ZoomIn","ZoomOut","ZoomToggle"]),t.s)
 B.Fd=new A.b8(301,{AVRInput:4294970632,AVRPower:4294970633,Accel:4294967553,Accept:4294968577,Again:4294968578,AllCandidates:4294969089,Alphanumeric:4294969090,AltGraph:4294967555,AppSwitch:4294971393,ArrowDown:4294968065,ArrowLeft:4294968066,ArrowRight:4294968067,ArrowUp:4294968068,Attn:4294968579,AudioBalanceLeft:4294970625,AudioBalanceRight:4294970626,AudioBassBoostDown:4294970627,AudioBassBoostToggle:4294970882,AudioBassBoostUp:4294970628,AudioFaderFront:4294970629,AudioFaderRear:4294970630,AudioSurroundModeNext:4294970631,AudioTrebleDown:4294970884,AudioTrebleUp:4294970885,AudioVolumeDown:4294969871,AudioVolumeMute:4294969873,AudioVolumeUp:4294969872,Backspace:4294967304,BrightnessDown:4294968833,BrightnessUp:4294968834,BrowserBack:4294970369,BrowserFavorites:4294970370,BrowserForward:4294970371,BrowserHome:4294970372,BrowserRefresh:4294970373,BrowserSearch:4294970374,BrowserStop:4294970375,Call:4294971394,Camera:4294968835,CameraFocus:4294971395,Cancel:4294968580,CapsLock:4294967556,ChannelDown:4294970634,ChannelUp:4294970635,Clear:4294968321,Close:4294969857,ClosedCaptionToggle:4294970642,CodeInput:4294969091,ColorF0Red:4294970636,ColorF1Green:4294970637,ColorF2Yellow:4294970638,ColorF3Blue:4294970639,ColorF4Grey:4294970640,ColorF5Brown:4294970641,Compose:4294969092,ContextMenu:4294968581,Convert:4294969093,Copy:4294968322,CrSel:4294968323,Cut:4294968324,DVR:4294970703,Delete:4294967423,Dimmer:4294970643,DisplaySwap:4294970644,Eisu:4294969108,Eject:4294968836,End:4294968069,EndCall:4294971396,Enter:4294967309,EraseEof:4294968325,Esc:4294967323,Escape:4294967323,ExSel:4294968326,Execute:4294968582,Exit:4294970645,F1:4294969345,F10:4294969354,F11:4294969355,F12:4294969356,F13:4294969357,F14:4294969358,F15:4294969359,F16:4294969360,F17:4294969361,F18:4294969362,F19:4294969363,F2:4294969346,F20:4294969364,F21:4294969365,F22:4294969366,F23:4294969367,F24:4294969368,F3:4294969347,F4:4294969348,F5:4294969349,F6:4294969350,F7:4294969351,F8:4294969352,F9:4294969353,FavoriteClear0:4294970646,FavoriteClear1:4294970647,FavoriteClear2:4294970648,FavoriteClear3:4294970649,FavoriteRecall0:4294970650,FavoriteRecall1:4294970651,FavoriteRecall2:4294970652,FavoriteRecall3:4294970653,FavoriteStore0:4294970654,FavoriteStore1:4294970655,FavoriteStore2:4294970656,FavoriteStore3:4294970657,FinalMode:4294969094,Find:4294968583,Fn:4294967558,FnLock:4294967559,GoBack:4294971397,GoHome:4294971398,GroupFirst:4294969095,GroupLast:4294969096,GroupNext:4294969097,GroupPrevious:4294969098,Guide:4294970658,GuideNextDay:4294970659,GuidePreviousDay:4294970660,HangulMode:4294969105,HanjaMode:4294969106,Hankaku:4294969109,HeadsetHook:4294971399,Help:4294968584,Hibernate:4294968841,Hiragana:4294969110,HiraganaKatakana:4294969111,Home:4294968070,Hyper:4294967560,Info:4294970661,Insert:4294968327,InstantReplay:4294970662,JunjaMode:4294969107,KanaMode:4294969112,KanjiMode:4294969113,Katakana:4294969114,Key11:4294971905,Key12:4294971906,LastNumberRedial:4294971400,LaunchApplication1:4294970118,LaunchApplication2:4294970113,LaunchAssistant:4294970126,LaunchCalendar:4294970114,LaunchContacts:4294970124,LaunchControlPanel:4294970127,LaunchMail:4294970115,LaunchMediaPlayer:4294970116,LaunchMusicPlayer:4294970117,LaunchPhone:4294970125,LaunchScreenSaver:4294970119,LaunchSpreadsheet:4294970120,LaunchWebBrowser:4294970121,LaunchWebCam:4294970122,LaunchWordProcessor:4294970123,Link:4294970663,ListProgram:4294970664,LiveContent:4294970665,Lock:4294970666,LogOff:4294968837,MailForward:4294969858,MailReply:4294969859,MailSend:4294969860,MannerMode:4294971402,MediaApps:4294970667,MediaAudioTrack:4294970704,MediaClose:4294970715,MediaFastForward:4294970668,MediaLast:4294970669,MediaPause:4294970670,MediaPlay:4294970671,MediaPlayPause:4294969861,MediaRecord:4294970672,MediaRewind:4294970673,MediaSkip:4294970674,MediaSkipBackward:4294970705,MediaSkipForward:4294970706,MediaStepBackward:4294970707,MediaStepForward:4294970708,MediaStop:4294969863,MediaTopMenu:4294970709,MediaTrackNext:4294969864,MediaTrackPrevious:4294969865,MicrophoneToggle:4294970886,MicrophoneVolumeDown:4294970887,MicrophoneVolumeMute:4294970889,MicrophoneVolumeUp:4294970888,ModeChange:4294969099,NavigateIn:4294970710,NavigateNext:4294970711,NavigateOut:4294970712,NavigatePrevious:4294970713,New:4294969866,NextCandidate:4294969100,NextFavoriteChannel:4294970675,NextUserProfile:4294970676,NonConvert:4294969101,Notification:4294971401,NumLock:4294967562,OnDemand:4294970677,Open:4294969867,PageDown:4294968071,PageUp:4294968072,Pairing:4294970714,Paste:4294968328,Pause:4294968585,PinPDown:4294970678,PinPMove:4294970679,PinPToggle:4294970680,PinPUp:4294970681,Play:4294968586,PlaySpeedDown:4294970682,PlaySpeedReset:4294970683,PlaySpeedUp:4294970684,Power:4294968838,PowerOff:4294968839,PreviousCandidate:4294969102,Print:4294969868,PrintScreen:4294968840,Process:4294969103,Props:4294968587,RandomToggle:4294970685,RcLowBattery:4294970686,RecordSpeedNext:4294970687,Redo:4294968329,RfBypass:4294970688,Romaji:4294969115,STBInput:4294970693,STBPower:4294970694,Save:4294969869,ScanChannelsToggle:4294970689,ScreenModeNext:4294970690,ScrollLock:4294967564,Select:4294968588,Settings:4294970691,ShiftLevel5:4294967569,SingleCandidate:4294969104,Soft1:4294969601,Soft2:4294969602,Soft3:4294969603,Soft4:4294969604,Soft5:4294969605,Soft6:4294969606,Soft7:4294969607,Soft8:4294969608,SpeechCorrectionList:4294971137,SpeechInputToggle:4294971138,SpellCheck:4294969870,SplitScreenToggle:4294970692,Standby:4294968842,Subtitle:4294970695,Super:4294967566,Symbol:4294967567,SymbolLock:4294967568,TV:4294970697,TV3DMode:4294971649,TVAntennaCable:4294971650,TVAudioDescription:4294971651,TVAudioDescriptionMixDown:4294971652,TVAudioDescriptionMixUp:4294971653,TVContentsMenu:4294971654,TVDataService:4294971655,TVInput:4294970698,TVInputComponent1:4294971656,TVInputComponent2:4294971657,TVInputComposite1:4294971658,TVInputComposite2:4294971659,TVInputHDMI1:4294971660,TVInputHDMI2:4294971661,TVInputHDMI3:4294971662,TVInputHDMI4:4294971663,TVInputVGA1:4294971664,TVMediaContext:4294971665,TVNetwork:4294971666,TVNumberEntry:4294971667,TVPower:4294970699,TVRadioService:4294971668,TVSatellite:4294971669,TVSatelliteBS:4294971670,TVSatelliteCS:4294971671,TVSatelliteToggle:4294971672,TVTerrestrialAnalog:4294971673,TVTerrestrialDigital:4294971674,TVTimer:4294971675,Tab:4294967305,Teletext:4294970696,Undo:4294968330,Unidentified:4294967297,VideoModeNext:4294970700,VoiceDial:4294971403,WakeUp:4294968843,Wink:4294970701,Zenkaku:4294969116,ZenkakuHankaku:4294969117,ZoomIn:4294968589,ZoomOut:4294968590,ZoomToggle:4294970702},B.mX,t.eL)
 B.Fe=new A.b8(301,{AVRInput:B.ps,AVRPower:B.pt,Accel:B.n8,Accept:B.nn,Again:B.no,AllCandidates:B.nM,Alphanumeric:B.nN,AltGraph:B.e9,AppSwitch:B.qW,ArrowDown:B.b7,ArrowLeft:B.aM,ArrowRight:B.aN,ArrowUp:B.b8,Attn:B.np,AudioBalanceLeft:B.pl,AudioBalanceRight:B.pm,AudioBassBoostDown:B.pn,AudioBassBoostToggle:B.qN,AudioBassBoostUp:B.po,AudioFaderFront:B.pp,AudioFaderRear:B.pq,AudioSurroundModeNext:B.pr,AudioTrebleDown:B.qO,AudioTrebleUp:B.qP,AudioVolumeDown:B.oX,AudioVolumeMute:B.oZ,AudioVolumeUp:B.oY,Backspace:B.aE,BrightnessDown:B.nB,BrightnessUp:B.nC,BrowserBack:B.pe,BrowserFavorites:B.pf,BrowserForward:B.pg,BrowserHome:B.ph,BrowserRefresh:B.pi,BrowserSearch:B.pj,BrowserStop:B.pk,Call:B.qX,Camera:B.nD,CameraFocus:B.qY,Cancel:B.nq,CapsLock:B.cR,ChannelDown:B.pu,ChannelUp:B.pv,Clear:B.hc,Close:B.oK,ClosedCaptionToggle:B.pC,CodeInput:B.nO,ColorF0Red:B.pw,ColorF1Green:B.px,ColorF2Yellow:B.py,ColorF3Blue:B.pz,ColorF4Grey:B.pA,ColorF5Brown:B.pB,Compose:B.nP,ContextMenu:B.nr,Convert:B.nQ,Copy:B.nf,CrSel:B.ng,Cut:B.nh,DVR:B.qA,Delete:B.aq,Dimmer:B.pD,DisplaySwap:B.pE,Eisu:B.o4,Eject:B.nE,End:B.bG,EndCall:B.qZ,Enter:B.e8,EraseEof:B.ni,Esc:B.cQ,Escape:B.cQ,ExSel:B.nj,Execute:B.ns,Exit:B.pF,F1:B.oe,F10:B.on,F11:B.oo,F12:B.op,F13:B.oq,F14:B.or,F15:B.os,F16:B.ot,F17:B.ou,F18:B.ov,F19:B.ow,F2:B.of,F20:B.ox,F21:B.oy,F22:B.oz,F23:B.oA,F24:B.oB,F3:B.og,F4:B.oh,F5:B.oi,F6:B.oj,F7:B.ok,F8:B.ol,F9:B.om,FavoriteClear0:B.pG,FavoriteClear1:B.pH,FavoriteClear2:B.pI,FavoriteClear3:B.pJ,FavoriteRecall0:B.pK,FavoriteRecall1:B.pL,FavoriteRecall2:B.pM,FavoriteRecall3:B.pN,FavoriteStore0:B.pO,FavoriteStore1:B.pP,FavoriteStore2:B.pQ,FavoriteStore3:B.pR,FinalMode:B.nR,Find:B.nt,Fn:B.hb,FnLock:B.n9,GoBack:B.r_,GoHome:B.r0,GroupFirst:B.nS,GroupLast:B.nT,GroupNext:B.nU,GroupPrevious:B.nV,Guide:B.pS,GuideNextDay:B.pT,GuidePreviousDay:B.pU,HangulMode:B.o1,HanjaMode:B.o2,Hankaku:B.o5,HeadsetHook:B.r1,Help:B.nu,Hibernate:B.nJ,Hiragana:B.o6,HiraganaKatakana:B.o7,Home:B.bH,Hyper:B.na,Info:B.pV,Insert:B.hd,InstantReplay:B.pW,JunjaMode:B.o3,KanaMode:B.o8,KanjiMode:B.o9,Katakana:B.oa,Key11:B.rx,Key12:B.ry,LastNumberRedial:B.r2,LaunchApplication1:B.p4,LaunchApplication2:B.p_,LaunchAssistant:B.pc,LaunchCalendar:B.p0,LaunchContacts:B.pa,LaunchControlPanel:B.pd,LaunchMail:B.p1,LaunchMediaPlayer:B.p2,LaunchMusicPlayer:B.p3,LaunchPhone:B.pb,LaunchScreenSaver:B.p5,LaunchSpreadsheet:B.p6,LaunchWebBrowser:B.p7,LaunchWebCam:B.p8,LaunchWordProcessor:B.p9,Link:B.pX,ListProgram:B.pY,LiveContent:B.pZ,Lock:B.q_,LogOff:B.nF,MailForward:B.oL,MailReply:B.oM,MailSend:B.oN,MannerMode:B.r4,MediaApps:B.q0,MediaAudioTrack:B.qB,MediaClose:B.qM,MediaFastForward:B.q1,MediaLast:B.q2,MediaPause:B.q3,MediaPlay:B.q4,MediaPlayPause:B.oO,MediaRecord:B.q5,MediaRewind:B.q6,MediaSkip:B.q7,MediaSkipBackward:B.qC,MediaSkipForward:B.qD,MediaStepBackward:B.qE,MediaStepForward:B.qF,MediaStop:B.oP,MediaTopMenu:B.qG,MediaTrackNext:B.oQ,MediaTrackPrevious:B.oR,MicrophoneToggle:B.qQ,MicrophoneVolumeDown:B.qR,MicrophoneVolumeMute:B.qT,MicrophoneVolumeUp:B.qS,ModeChange:B.nW,NavigateIn:B.qH,NavigateNext:B.qI,NavigateOut:B.qJ,NavigatePrevious:B.qK,New:B.oS,NextCandidate:B.nX,NextFavoriteChannel:B.q8,NextUserProfile:B.q9,NonConvert:B.nY,Notification:B.r3,NumLock:B.ea,OnDemand:B.qa,Open:B.oT,PageDown:B.cS,PageUp:B.cT,Pairing:B.qL,Paste:B.nk,Pause:B.nv,PinPDown:B.qb,PinPMove:B.qc,PinPToggle:B.qd,PinPUp:B.qe,Play:B.nw,PlaySpeedDown:B.qf,PlaySpeedReset:B.qg,PlaySpeedUp:B.qh,Power:B.nG,PowerOff:B.nH,PreviousCandidate:B.nZ,Print:B.oU,PrintScreen:B.nI,Process:B.o_,Props:B.nx,RandomToggle:B.qi,RcLowBattery:B.qj,RecordSpeedNext:B.qk,Redo:B.nl,RfBypass:B.ql,Romaji:B.ob,STBInput:B.qq,STBPower:B.qr,Save:B.oV,ScanChannelsToggle:B.qm,ScreenModeNext:B.qn,ScrollLock:B.eb,Select:B.ny,Settings:B.qo,ShiftLevel5:B.ne,SingleCandidate:B.o0,Soft1:B.oC,Soft2:B.oD,Soft3:B.oE,Soft4:B.oF,Soft5:B.oG,Soft6:B.oH,Soft7:B.oI,Soft8:B.oJ,SpeechCorrectionList:B.qU,SpeechInputToggle:B.qV,SpellCheck:B.oW,SplitScreenToggle:B.qp,Standby:B.nK,Subtitle:B.qs,Super:B.nb,Symbol:B.nc,SymbolLock:B.nd,TV:B.qu,TV3DMode:B.r6,TVAntennaCable:B.r7,TVAudioDescription:B.r8,TVAudioDescriptionMixDown:B.r9,TVAudioDescriptionMixUp:B.ra,TVContentsMenu:B.rb,TVDataService:B.rc,TVInput:B.qv,TVInputComponent1:B.rd,TVInputComponent2:B.re,TVInputComposite1:B.rf,TVInputComposite2:B.rg,TVInputHDMI1:B.rh,TVInputHDMI2:B.ri,TVInputHDMI3:B.rj,TVInputHDMI4:B.rk,TVInputVGA1:B.rl,TVMediaContext:B.rm,TVNetwork:B.rn,TVNumberEntry:B.ro,TVPower:B.qw,TVRadioService:B.rp,TVSatellite:B.rq,TVSatelliteBS:B.rr,TVSatelliteCS:B.rs,TVSatelliteToggle:B.rt,TVTerrestrialAnalog:B.ru,TVTerrestrialDigital:B.rv,TVTimer:B.rw,Tab:B.e7,Teletext:B.qt,Undo:B.nm,Unidentified:B.n7,VideoModeNext:B.qx,VoiceDial:B.r5,WakeUp:B.nL,Wink:B.qy,Zenkaku:B.oc,ZenkakuHankaku:B.od,ZoomIn:B.nz,ZoomOut:B.nA,ZoomToggle:B.qz},B.mX,A.ae("b8<r,e>"))
-B.CO=A.a(s(["Abort","Again","AltLeft","AltRight","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","AudioVolumeDown","AudioVolumeMute","AudioVolumeUp","Backquote","Backslash","Backspace","BracketLeft","BracketRight","BrightnessDown","BrightnessUp","BrowserBack","BrowserFavorites","BrowserForward","BrowserHome","BrowserRefresh","BrowserSearch","BrowserStop","CapsLock","Comma","ContextMenu","ControlLeft","ControlRight","Convert","Copy","Cut","Delete","Digit0","Digit1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9","DisplayToggleIntExt","Eject","End","Enter","Equal","Escape","Esc","F1","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F2","F20","F21","F22","F23","F24","F3","F4","F5","F6","F7","F8","F9","Find","Fn","FnLock","GameButton1","GameButton10","GameButton11","GameButton12","GameButton13","GameButton14","GameButton15","GameButton16","GameButton2","GameButton3","GameButton4","GameButton5","GameButton6","GameButton7","GameButton8","GameButton9","GameButtonA","GameButtonB","GameButtonC","GameButtonLeft1","GameButtonLeft2","GameButtonMode","GameButtonRight1","GameButtonRight2","GameButtonSelect","GameButtonStart","GameButtonThumbLeft","GameButtonThumbRight","GameButtonX","GameButtonY","GameButtonZ","Help","Home","Hyper","Insert","IntlBackslash","IntlRo","IntlYen","KanaMode","KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ","KeyK","KeyL","KeyM","KeyN","KeyO","KeyP","KeyQ","KeyR","KeyS","KeyT","KeyU","KeyV","KeyW","KeyX","KeyY","KeyZ","KeyboardLayoutSelect","Lang1","Lang2","Lang3","Lang4","Lang5","LaunchApp1","LaunchApp2","LaunchAssistant","LaunchControlPanel","LaunchMail","LaunchScreenSaver","MailForward","MailReply","MailSend","MediaFastForward","MediaPause","MediaPlay","MediaPlayPause","MediaRecord","MediaRewind","MediaSelect","MediaStop","MediaTrackNext","MediaTrackPrevious","MetaLeft","MetaRight","MicrophoneMuteToggle","Minus","NonConvert","NumLock","Numpad0","Numpad1","Numpad2","Numpad3","Numpad4","Numpad5","Numpad6","Numpad7","Numpad8","Numpad9","NumpadAdd","NumpadBackspace","NumpadClear","NumpadClearEntry","NumpadComma","NumpadDecimal","NumpadDivide","NumpadEnter","NumpadEqual","NumpadMemoryAdd","NumpadMemoryClear","NumpadMemoryRecall","NumpadMemoryStore","NumpadMemorySubtract","NumpadMultiply","NumpadParenLeft","NumpadParenRight","NumpadSubtract","Open","PageDown","PageUp","Paste","Pause","Period","Power","PrintScreen","PrivacyScreenToggle","Props","Quote","Resume","ScrollLock","Select","SelectTask","Semicolon","ShiftLeft","ShiftRight","ShowAllWindows","Slash","Sleep","Space","Super","Suspend","Tab","Turbo","Undo","WakeUp","ZoomToggle"]),t.s)
-B.Ff=new A.b8(231,{Abort:B.tM,Again:B.jo,AltLeft:B.bL,AltRight:B.bt,ArrowDown:B.iO,ArrowLeft:B.iN,ArrowRight:B.iM,ArrowUp:B.iP,AudioVolumeDown:B.jw,AudioVolumeMute:B.ju,AudioVolumeUp:B.jv,Backquote:B.io,Backslash:B.ik,Backspace:B.ic,BracketLeft:B.ii,BracketRight:B.ij,BrightnessDown:B.jO,BrightnessUp:B.jN,BrowserBack:B.k8,BrowserFavorites:B.kc,BrowserForward:B.k9,BrowserHome:B.k7,BrowserRefresh:B.kb,BrowserSearch:B.k6,BrowserStop:B.ka,CapsLock:B.bs,Comma:B.ip,ContextMenu:B.j6,ControlLeft:B.bJ,ControlRight:B.c7,Convert:B.jB,Copy:B.jr,Cut:B.jq,Delete:B.iJ,Digit0:B.ia,Digit1:B.i1,Digit2:B.i2,Digit3:B.i3,Digit4:B.i4,Digit5:B.i5,Digit6:B.i6,Digit7:B.i7,Digit8:B.i8,Digit9:B.i9,DisplayToggleIntExt:B.jM,Eject:B.jX,End:B.iK,Enter:B.ib,Equal:B.ih,Escape:B.en,Esc:B.en,F1:B.is,F10:B.iB,F11:B.iC,F12:B.iD,F13:B.j9,F14:B.ja,F15:B.jb,F16:B.jc,F17:B.jd,F18:B.je,F19:B.jf,F2:B.it,F20:B.jg,F21:B.jh,F22:B.ji,F23:B.jj,F24:B.jk,F3:B.iu,F4:B.iv,F5:B.iw,F6:B.ix,F7:B.iy,F8:B.iz,F9:B.iA,Find:B.jt,Fn:B.d6,FnLock:B.td,GameButton1:B.th,GameButton10:B.tq,GameButton11:B.tr,GameButton12:B.ts,GameButton13:B.tt,GameButton14:B.tu,GameButton15:B.tv,GameButton16:B.tw,GameButton2:B.ti,GameButton3:B.tj,GameButton4:B.tk,GameButton5:B.tl,GameButton6:B.tm,GameButton7:B.tn,GameButton8:B.to,GameButton9:B.tp,GameButtonA:B.tx,GameButtonB:B.ty,GameButtonC:B.tz,GameButtonLeft1:B.tA,GameButtonLeft2:B.tB,GameButtonMode:B.tC,GameButtonRight1:B.tD,GameButtonRight2:B.tE,GameButtonSelect:B.tF,GameButtonStart:B.tG,GameButtonThumbLeft:B.tH,GameButtonThumbRight:B.tI,GameButtonX:B.tJ,GameButtonY:B.tK,GameButtonZ:B.tL,Help:B.jm,Home:B.iH,Hyper:B.tb,Insert:B.iG,IntlBackslash:B.j5,IntlRo:B.jy,IntlYen:B.jA,KanaMode:B.jz,KeyA:B.hC,KeyB:B.hD,KeyC:B.hE,KeyD:B.hF,KeyE:B.hG,KeyF:B.hH,KeyG:B.hI,KeyH:B.hJ,KeyI:B.hK,KeyJ:B.hL,KeyK:B.hM,KeyL:B.hN,KeyM:B.hO,KeyN:B.hP,KeyO:B.hQ,KeyP:B.hR,KeyQ:B.hS,KeyR:B.hT,KeyS:B.hU,KeyT:B.hV,KeyU:B.hW,KeyV:B.hX,KeyW:B.hY,KeyX:B.hZ,KeyY:B.i_,KeyZ:B.i0,KeyboardLayoutSelect:B.kh,Lang1:B.jD,Lang2:B.jE,Lang3:B.jF,Lang4:B.jG,Lang5:B.jH,LaunchApp1:B.k1,LaunchApp2:B.k0,LaunchAssistant:B.k5,LaunchControlPanel:B.k2,LaunchMail:B.k_,LaunchScreenSaver:B.k4,MailForward:B.kf,MailReply:B.ke,MailSend:B.kg,MediaFastForward:B.jS,MediaPause:B.jQ,MediaPlay:B.jP,MediaPlayPause:B.jY,MediaRecord:B.jR,MediaRewind:B.jT,MediaSelect:B.jZ,MediaStop:B.jW,MediaTrackNext:B.jU,MediaTrackPrevious:B.jV,MetaLeft:B.bM,MetaRight:B.c9,MicrophoneMuteToggle:B.hB,Minus:B.ig,NonConvert:B.jC,NumLock:B.d8,Numpad0:B.j3,Numpad1:B.iV,Numpad2:B.iW,Numpad3:B.iX,Numpad4:B.iY,Numpad5:B.iZ,Numpad6:B.j_,Numpad7:B.j0,Numpad8:B.j1,Numpad9:B.j2,NumpadAdd:B.iT,NumpadBackspace:B.tO,NumpadClear:B.tV,NumpadClearEntry:B.tW,NumpadComma:B.jx,NumpadDecimal:B.j4,NumpadDivide:B.iQ,NumpadEnter:B.iU,NumpadEqual:B.j8,NumpadMemoryAdd:B.tS,NumpadMemoryClear:B.tR,NumpadMemoryRecall:B.tQ,NumpadMemoryStore:B.tP,NumpadMemorySubtract:B.tT,NumpadMultiply:B.iR,NumpadParenLeft:B.jI,NumpadParenRight:B.jJ,NumpadSubtract:B.iS,Open:B.jl,PageDown:B.iL,PageUp:B.iI,Paste:B.js,Pause:B.iF,Period:B.iq,Power:B.j7,PrintScreen:B.iE,PrivacyScreenToggle:B.hA,Props:B.tN,Quote:B.im,Resume:B.tf,ScrollLock:B.d7,Select:B.jn,SelectTask:B.k3,Semicolon:B.il,ShiftLeft:B.bK,ShiftRight:B.c8,ShowAllWindows:B.ki,Slash:B.ir,Sleep:B.jK,Space:B.ie,Super:B.tc,Suspend:B.te,Tab:B.id,Turbo:B.tg,Undo:B.jp,WakeUp:B.jL,ZoomToggle:B.kd},B.CO,A.ae("b8<r,j>"))
+B.CP=A.a(s(["Abort","Again","AltLeft","AltRight","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","AudioVolumeDown","AudioVolumeMute","AudioVolumeUp","Backquote","Backslash","Backspace","BracketLeft","BracketRight","BrightnessDown","BrightnessUp","BrowserBack","BrowserFavorites","BrowserForward","BrowserHome","BrowserRefresh","BrowserSearch","BrowserStop","CapsLock","Comma","ContextMenu","ControlLeft","ControlRight","Convert","Copy","Cut","Delete","Digit0","Digit1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9","DisplayToggleIntExt","Eject","End","Enter","Equal","Escape","Esc","F1","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F2","F20","F21","F22","F23","F24","F3","F4","F5","F6","F7","F8","F9","Find","Fn","FnLock","GameButton1","GameButton10","GameButton11","GameButton12","GameButton13","GameButton14","GameButton15","GameButton16","GameButton2","GameButton3","GameButton4","GameButton5","GameButton6","GameButton7","GameButton8","GameButton9","GameButtonA","GameButtonB","GameButtonC","GameButtonLeft1","GameButtonLeft2","GameButtonMode","GameButtonRight1","GameButtonRight2","GameButtonSelect","GameButtonStart","GameButtonThumbLeft","GameButtonThumbRight","GameButtonX","GameButtonY","GameButtonZ","Help","Home","Hyper","Insert","IntlBackslash","IntlRo","IntlYen","KanaMode","KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ","KeyK","KeyL","KeyM","KeyN","KeyO","KeyP","KeyQ","KeyR","KeyS","KeyT","KeyU","KeyV","KeyW","KeyX","KeyY","KeyZ","KeyboardLayoutSelect","Lang1","Lang2","Lang3","Lang4","Lang5","LaunchApp1","LaunchApp2","LaunchAssistant","LaunchControlPanel","LaunchMail","LaunchScreenSaver","MailForward","MailReply","MailSend","MediaFastForward","MediaPause","MediaPlay","MediaPlayPause","MediaRecord","MediaRewind","MediaSelect","MediaStop","MediaTrackNext","MediaTrackPrevious","MetaLeft","MetaRight","MicrophoneMuteToggle","Minus","NonConvert","NumLock","Numpad0","Numpad1","Numpad2","Numpad3","Numpad4","Numpad5","Numpad6","Numpad7","Numpad8","Numpad9","NumpadAdd","NumpadBackspace","NumpadClear","NumpadClearEntry","NumpadComma","NumpadDecimal","NumpadDivide","NumpadEnter","NumpadEqual","NumpadMemoryAdd","NumpadMemoryClear","NumpadMemoryRecall","NumpadMemoryStore","NumpadMemorySubtract","NumpadMultiply","NumpadParenLeft","NumpadParenRight","NumpadSubtract","Open","PageDown","PageUp","Paste","Pause","Period","Power","PrintScreen","PrivacyScreenToggle","Props","Quote","Resume","ScrollLock","Select","SelectTask","Semicolon","ShiftLeft","ShiftRight","ShowAllWindows","Slash","Sleep","Space","Super","Suspend","Tab","Turbo","Undo","WakeUp","ZoomToggle"]),t.s)
+B.Ff=new A.b8(231,{Abort:B.tM,Again:B.jo,AltLeft:B.bL,AltRight:B.bt,ArrowDown:B.iO,ArrowLeft:B.iN,ArrowRight:B.iM,ArrowUp:B.iP,AudioVolumeDown:B.jw,AudioVolumeMute:B.ju,AudioVolumeUp:B.jv,Backquote:B.io,Backslash:B.ik,Backspace:B.ic,BracketLeft:B.ii,BracketRight:B.ij,BrightnessDown:B.jO,BrightnessUp:B.jN,BrowserBack:B.k8,BrowserFavorites:B.kc,BrowserForward:B.k9,BrowserHome:B.k7,BrowserRefresh:B.kb,BrowserSearch:B.k6,BrowserStop:B.ka,CapsLock:B.bs,Comma:B.ip,ContextMenu:B.j6,ControlLeft:B.bJ,ControlRight:B.c7,Convert:B.jB,Copy:B.jr,Cut:B.jq,Delete:B.iJ,Digit0:B.ia,Digit1:B.i1,Digit2:B.i2,Digit3:B.i3,Digit4:B.i4,Digit5:B.i5,Digit6:B.i6,Digit7:B.i7,Digit8:B.i8,Digit9:B.i9,DisplayToggleIntExt:B.jM,Eject:B.jX,End:B.iK,Enter:B.ib,Equal:B.ih,Escape:B.en,Esc:B.en,F1:B.is,F10:B.iB,F11:B.iC,F12:B.iD,F13:B.j9,F14:B.ja,F15:B.jb,F16:B.jc,F17:B.jd,F18:B.je,F19:B.jf,F2:B.it,F20:B.jg,F21:B.jh,F22:B.ji,F23:B.jj,F24:B.jk,F3:B.iu,F4:B.iv,F5:B.iw,F6:B.ix,F7:B.iy,F8:B.iz,F9:B.iA,Find:B.jt,Fn:B.d6,FnLock:B.td,GameButton1:B.th,GameButton10:B.tq,GameButton11:B.tr,GameButton12:B.ts,GameButton13:B.tt,GameButton14:B.tu,GameButton15:B.tv,GameButton16:B.tw,GameButton2:B.ti,GameButton3:B.tj,GameButton4:B.tk,GameButton5:B.tl,GameButton6:B.tm,GameButton7:B.tn,GameButton8:B.to,GameButton9:B.tp,GameButtonA:B.tx,GameButtonB:B.ty,GameButtonC:B.tz,GameButtonLeft1:B.tA,GameButtonLeft2:B.tB,GameButtonMode:B.tC,GameButtonRight1:B.tD,GameButtonRight2:B.tE,GameButtonSelect:B.tF,GameButtonStart:B.tG,GameButtonThumbLeft:B.tH,GameButtonThumbRight:B.tI,GameButtonX:B.tJ,GameButtonY:B.tK,GameButtonZ:B.tL,Help:B.jm,Home:B.iH,Hyper:B.tb,Insert:B.iG,IntlBackslash:B.j5,IntlRo:B.jy,IntlYen:B.jA,KanaMode:B.jz,KeyA:B.hC,KeyB:B.hD,KeyC:B.hE,KeyD:B.hF,KeyE:B.hG,KeyF:B.hH,KeyG:B.hI,KeyH:B.hJ,KeyI:B.hK,KeyJ:B.hL,KeyK:B.hM,KeyL:B.hN,KeyM:B.hO,KeyN:B.hP,KeyO:B.hQ,KeyP:B.hR,KeyQ:B.hS,KeyR:B.hT,KeyS:B.hU,KeyT:B.hV,KeyU:B.hW,KeyV:B.hX,KeyW:B.hY,KeyX:B.hZ,KeyY:B.i_,KeyZ:B.i0,KeyboardLayoutSelect:B.kh,Lang1:B.jD,Lang2:B.jE,Lang3:B.jF,Lang4:B.jG,Lang5:B.jH,LaunchApp1:B.k1,LaunchApp2:B.k0,LaunchAssistant:B.k5,LaunchControlPanel:B.k2,LaunchMail:B.k_,LaunchScreenSaver:B.k4,MailForward:B.kf,MailReply:B.ke,MailSend:B.kg,MediaFastForward:B.jS,MediaPause:B.jQ,MediaPlay:B.jP,MediaPlayPause:B.jY,MediaRecord:B.jR,MediaRewind:B.jT,MediaSelect:B.jZ,MediaStop:B.jW,MediaTrackNext:B.jU,MediaTrackPrevious:B.jV,MetaLeft:B.bM,MetaRight:B.c9,MicrophoneMuteToggle:B.hB,Minus:B.ig,NonConvert:B.jC,NumLock:B.d8,Numpad0:B.j3,Numpad1:B.iV,Numpad2:B.iW,Numpad3:B.iX,Numpad4:B.iY,Numpad5:B.iZ,Numpad6:B.j_,Numpad7:B.j0,Numpad8:B.j1,Numpad9:B.j2,NumpadAdd:B.iT,NumpadBackspace:B.tO,NumpadClear:B.tV,NumpadClearEntry:B.tW,NumpadComma:B.jx,NumpadDecimal:B.j4,NumpadDivide:B.iQ,NumpadEnter:B.iU,NumpadEqual:B.j8,NumpadMemoryAdd:B.tS,NumpadMemoryClear:B.tR,NumpadMemoryRecall:B.tQ,NumpadMemoryStore:B.tP,NumpadMemorySubtract:B.tT,NumpadMultiply:B.iR,NumpadParenLeft:B.jI,NumpadParenRight:B.jJ,NumpadSubtract:B.iS,Open:B.jl,PageDown:B.iL,PageUp:B.iI,Paste:B.js,Pause:B.iF,Period:B.iq,Power:B.j7,PrintScreen:B.iE,PrivacyScreenToggle:B.hA,Props:B.tN,Quote:B.im,Resume:B.tf,ScrollLock:B.d7,Select:B.jn,SelectTask:B.k3,Semicolon:B.il,ShiftLeft:B.bK,ShiftRight:B.c8,ShowAllWindows:B.ki,Slash:B.ir,Sleep:B.jK,Space:B.ie,Super:B.tc,Suspend:B.te,Tab:B.id,Turbo:B.tg,Undo:B.jp,WakeUp:B.jL,ZoomToggle:B.kd},B.CP,A.ae("b8<r,j>"))
 B.mZ=A.a(s(["*","+","-",".","/","0","1","2","3","4","5","6","7","8","9","Alt","AltGraph","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","Clear","Control","Delete","End","Enter","Home","Insert","Meta","PageDown","PageUp","Shift"]),t.s)
 B.BD=A.a(s([42,null,null,8589935146]),t.Z)
 B.BE=A.a(s([43,null,null,8589935147]),t.Z)
@@ -69236,7 +69236,7 @@ B.D4=A.a(s([B.rK,null,null,B.hn]),t.L)
 B.Ck=A.a(s([B.rL,null,null,B.ho]),t.L)
 B.Cl=A.a(s([B.rM,null,null,B.hp]),t.L)
 B.BY=A.a(s([B.cW,B.cW,B.ee,null]),t.L)
-B.CH=A.a(s([B.e9,null,B.e9,null]),t.L)
+B.CI=A.a(s([B.e9,null,B.e9,null]),t.L)
 B.Cd=A.a(s([B.b7,null,null,B.hi]),t.L)
 B.Ce=A.a(s([B.aM,null,null,B.hk]),t.L)
 B.Cf=A.a(s([B.aN,null,null,B.hm]),t.L)
@@ -69245,14 +69245,14 @@ B.BW=A.a(s([B.hc,null,null,B.hl]),t.L)
 B.BZ=A.a(s([B.cU,B.cU,B.ec,null]),t.L)
 B.C6=A.a(s([B.aq,null,null,B.hf]),t.L)
 B.Cg=A.a(s([B.bG,null,null,B.hh]),t.L)
-B.Cs=A.a(s([B.e8,null,null,B.he]),t.L)
+B.Ct=A.a(s([B.e8,null,null,B.he]),t.L)
 B.Ch=A.a(s([B.bH,null,null,B.hn]),t.L)
 B.BX=A.a(s([B.hd,null,null,B.hg]),t.L)
 B.C_=A.a(s([B.cX,B.cX,B.ef,null]),t.L)
 B.Ci=A.a(s([B.cS,null,null,B.hj]),t.L)
-B.CI=A.a(s([B.cT,null,null,B.hp]),t.L)
+B.CJ=A.a(s([B.cT,null,null,B.hp]),t.L)
 B.C0=A.a(s([B.cV,B.cV,B.ed,null]),t.L)
-B.Fh=new A.b8(32,{"*":B.C7,"+":B.C8,"-":B.C9,".":B.Ca,"/":B.Cb,"0":B.CY,"1":B.CZ,"2":B.D_,"3":B.D0,"4":B.D1,"5":B.D2,"6":B.D3,"7":B.D4,"8":B.Ck,"9":B.Cl,Alt:B.BY,AltGraph:B.CH,ArrowDown:B.Cd,ArrowLeft:B.Ce,ArrowRight:B.Cf,ArrowUp:B.Bp,Clear:B.BW,Control:B.BZ,Delete:B.C6,End:B.Cg,Enter:B.Cs,Home:B.Ch,Insert:B.BX,Meta:B.C_,PageDown:B.Ci,PageUp:B.CI,Shift:B.C0},B.mZ,A.ae("b8<r,C<e?>>"))
+B.Fh=new A.b8(32,{"*":B.C7,"+":B.C8,"-":B.C9,".":B.Ca,"/":B.Cb,"0":B.CY,"1":B.CZ,"2":B.D_,"3":B.D0,"4":B.D1,"5":B.D2,"6":B.D3,"7":B.D4,"8":B.Ck,"9":B.Cl,Alt:B.BY,AltGraph:B.CI,ArrowDown:B.Cd,ArrowLeft:B.Ce,ArrowRight:B.Cf,ArrowUp:B.Bp,Clear:B.BW,Control:B.BZ,Delete:B.C6,End:B.Cg,Enter:B.Ct,Home:B.Ch,Insert:B.BX,Meta:B.C_,PageDown:B.Ci,PageUp:B.CJ,Shift:B.C0},B.mZ,A.ae("b8<r,C<e?>>"))
 B.Fi=new A.bw([0,"FontWeight.w100",1,"FontWeight.w200",2,"FontWeight.w300",3,"FontWeight.w400",4,"FontWeight.w500",5,"FontWeight.w600",6,"FontWeight.w700",7,"FontWeight.w800",8,"FontWeight.w900"],A.ae("bw<m,r>"))
 B.HL=new A.at(B.he,!1,!1,!1,!1)
 B.Hu=new A.at(B.cQ,!1,!1,!1,!1)
@@ -69510,8 +69510,8 @@ B.Hd=new A.wZ("RenderViewport.excludeFromScrolling")
 B.Bm=A.a(s(["click","touchstart","touchend","pointerdown","pointermove","pointerup"]),t.s)
 B.EL=new A.b8(6,{click:null,touchstart:null,touchend:null,pointerdown:null,pointermove:null,pointerup:null},B.Bm,t.uf)
 B.Hi=new A.cx(B.EL,t.XI)
-B.CK=A.a(s(["mailto","tel","sms"]),t.s)
-B.EM=new A.b8(3,{mailto:null,tel:null,sms:null},B.CK,t.uf)
+B.CL=A.a(s(["mailto","tel","sms"]),t.s)
+B.EM=new A.b8(3,{mailto:null,tel:null,sms:null},B.CL,t.uf)
 B.Hj=new A.cx(B.EM,t.XI)
 B.EN=new A.bw([B.aX,null,B.t7,null,B.t8,null],A.ae("bw<hb,aO>"))
 B.ky=new A.cx(B.EN,A.ae("cx<hb>"))
@@ -69536,11 +69536,11 @@ B.F1=new A.bw([B.cb,null,B.uw,null,B.G1,null,B.db,null,B.ux,null],A.ae("bw<fl,aO
 B.v2=new A.cx(B.F1,A.ae("cx<fl>"))
 B.F2=new A.bw([B.aG,null,B.ai,null,B.bc,null],A.ae("bw<cZ,aO>"))
 B.Hr=new A.cx(B.F2,t.JP)
-B.Cz=A.a(s([]),t.r6)
-B.F7=new A.b8(0,{},B.Cz,A.ae("b8<cZ,aO>"))
+B.CA=A.a(s([]),t.r6)
+B.F7=new A.b8(0,{},B.CA,A.ae("b8<cZ,aO>"))
 B.Hs=new A.cx(B.F7,t.JP)
-B.CT=A.a(s(["serif","sans-serif","monospace","cursive","fantasy","system-ui","math","emoji","fangsong"]),t.s)
-B.Fg=new A.b8(9,{serif:null,"sans-serif":null,monospace:null,cursive:null,fantasy:null,"system-ui":null,math:null,emoji:null,fangsong:null},B.CT,t.uf)
+B.CU=A.a(s(["serif","sans-serif","monospace","cursive","fantasy","system-ui","math","emoji","fangsong"]),t.s)
+B.Fg=new A.b8(9,{serif:null,"sans-serif":null,monospace:null,cursive:null,fantasy:null,"system-ui":null,math:null,emoji:null,fangsong:null},B.CU,t.uf)
 B.Ht=new A.cx(B.Fg,t.XI)
 B.v4=new A.at(B.b7,!1,!0,!1,!1)
 B.v3=new A.at(B.b8,!1,!0,!1,!1)
