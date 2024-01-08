@@ -38658,14 +38658,14 @@ gt(a){return A.N(null,null,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B
 j(a){return"GestureSettings(physicalTouchSlop: null, physicalDoubleTapSlop: null)"}}
 A.RT.prototype={
 pS(a){var s,r,q
-if(A.cE(a,0,null).gKB())return A.Pt(B.h5,a,B.N,!1)
+if(A.cE(a,0,null).gKB())return A.Pt(B.h4,a,B.N,!1)
 s=this.b
 if(s==null){s=self.window.document.querySelector("meta[name=assetBase]")
 r=s==null?null:s.content
 s=r==null
 if(!s)self.window.console.warn("The `assetBase` meta tag is now deprecated.\nUse engineInitializer.initializeEngine(config) instead.\nSee: https://docs.flutter.dev/development/platform-integration/web/initialization")
 q=this.b=s?"":r
-s=q}return A.Pt(B.h5,s+"assets/"+a,B.N,!1)}}
+s=q}return A.Pt(B.h4,s+"assets/"+a,B.N,!1)}}
 A.abv.prototype={
 $1(a){return this.MY(a)},
 $0(){return this.$1(null)},
@@ -54774,7 +54774,7 @@ A.Sm.prototype={
 $2(a,b){this.a.b.lM(a,b)},
 $S:44}
 A.a_4.prototype={
-h6(a,b){var s,r=B.bY.d3(A.aan(null,A.Pt(B.h5,b,B.N,!1),null).e),q=$.ew.dC$
+h6(a,b){var s,r=B.bY.d3(A.aan(null,A.Pt(B.h4,b,B.N,!1),null).e),q=$.ew.dC$
 q===$&&A.b()
 s=q.vs(0,"flutter/assets",A.mB(r.buffer,0,null)).bK(0,new A.a_5(b),t.V4)
 return s},
@@ -66850,7 +66850,7 @@ p=A.d0(25)
 return A.bU(o,A.cb(A.a([B.fH,B.fK,r,n,m,A.j1(A.eu(A.aS("See More!",$.hO.fb(20),B.W),q,o,o,o,o,new A.a_F(),B.cH,new A.bN(p,B.n),o),o,o)],t.p),B.Z,B.q,B.p),o,o,o,o,new A.aB(s,0,s,0),o)}}
 A.a_E.prototype={
 $1(a){var s=a.a
-return new A.iE(B.eb[s],B.hc[s],B.h8[s],B.h4[s],null)},
+return new A.iE(B.eb[s],B.hc[s],B.h8[s],B.h6[s],null)},
 $S:418}
 A.a_F.prototype={
 $0(){A.fL(A.cE(u.k,0,null))},
@@ -66865,7 +66865,7 @@ q=$.bq.a
 p=A.d0(25)
 return A.cb(A.a([B.fH,B.fK,m,s,r,A.j1(A.eu(A.aS("See More!",$.hO.fb(15),B.W),q,o,o,o,o,new A.a_H(),B.cH,new A.bN(p,B.n),o),o,o)],t.p),B.Z,B.q,B.p)}}
 A.a_G.prototype={
-$3(a,b,c){return new A.bC(B.dT,new A.iE(B.eb[c],B.hc[c],B.h8[c],B.h4[c],null),null)},
+$3(a,b,c){return new A.bC(B.dT,new A.iE(B.eb[c],B.hc[c],B.h8[c],B.h6[c],null),null)},
 $S:37}
 A.a_H.prototype={
 $0(){A.fL(A.cE(u.k,0,null))},
@@ -66882,7 +66882,7 @@ p=$.bq.a
 o=A.d0(25)
 return A.cb(A.a([B.fH,B.fK,s,r,q,A.j1(A.eu(A.aS("See More!",$.hO.fb(20),B.W),p,n,n,n,n,new A.a_J(),B.cH,new A.bN(o,B.n),n),n,n)],t.p),B.Z,B.q,B.p)}}
 A.a_I.prototype={
-$3(a,b,c){return new A.bC(B.dT,new A.iE(B.eb[c],B.hc[c],B.h8[c],B.h4[c],null),null)},
+$3(a,b,c){return new A.bC(B.dT,new A.iE(B.eb[c],B.hc[c],B.h8[c],B.h6[c],null),null)},
 $S:37}
 A.a_J.prototype={
 $0(){A.fL(A.cE(u.k,0,null))},
@@ -66948,7 +66948,7 @@ q=new A.h7(B.ed,t.ly)
 return A.bU(p,A.cb(A.a([B.fF,B.fI,r,A.a52(B.eV,q.gcT(q).dF(0,new A.a2q(),t.m1).cR(0),B.vV,n.a.b*0.05,o.a.a*0.05)],t.p),B.Z,B.q,B.p),p,p,p,p,new A.aB(s,0,s,0),p)}}
 A.a2q.prototype={
 $1(a){var s=a.a
-return new A.iI(B.ed[s],B.h6[s],B.h7[s],null)},
+return new A.iI(B.ed[s],B.h5[s],B.h7[s],null)},
 $S:419}
 A.HI.prototype={
 G(a){var s=t.w,r=A.aD(a,null,s).w.a.b
@@ -66957,7 +66957,7 @@ s=$.bs
 s.toString
 return A.cb(A.a([B.fF,B.fI,s,A.BR(new A.a2r(),4,A.BQ(!0,B.aI,B.aP,B.cF,!1,!0,r>700?r*0.38:r*0.5,0.65))],t.p),B.Z,B.q,B.p)}}
 A.a2r.prototype={
-$3(a,b,c){return new A.bC(B.dT,new A.iI(B.ed[c],B.h6[c],B.h7[c],null),null)},
+$3(a,b,c){return new A.bC(B.dT,new A.iI(B.ed[c],B.h5[c],B.h7[c],null),null)},
 $S:37}
 A.HJ.prototype={
 G(a){var s,r=t.w,q=A.aD(a,null,r).w.a.b
@@ -66966,7 +66966,7 @@ s=$.bs
 s.toString
 return A.cb(A.a([B.fF,B.fI,s,A.BR(new A.a2s(),4,A.BQ(!0,B.aI,B.aP,B.cF,!1,!0,r.a.a<750?q*0.45:q*0.3,0.55))],t.p),B.Z,B.q,B.p)}}
 A.a2s.prototype={
-$3(a,b,c){return new A.bC(B.dT,new A.iI(B.ed[c],B.h6[c],B.h7[c],null),null)},
+$3(a,b,c){return new A.bC(B.dT,new A.iI(B.ed[c],B.h5[c],B.h7[c],null),null)},
 $S:37}
 A.iI.prototype={
 ai(){return new A.Oa(new A.bm(null,t.Fa),B.j)}}
@@ -70635,7 +70635,6 @@ B.AA=new A.cJ(57506,"MaterialIcons",null)
 B.AO=new A.h3(B.AA,null,B.dM,null)
 B.N_=new A.fA("RESUME",null,null,null,null)
 B.Bp=new A.ur(B.AO,B.N_,null)
-B.h4=A.a(s(["https://www.linkedin.com/posts/siddheshgunjal_python-ml-keras-activity-7019906325933400064-Fju0?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_emotionai-emodetect-emotiontracking-activity-7097494709224271872-HlfY?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_ai-deeplearning-cybersecurity-activity-6827897161070514176-BM6Y?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_webar-computervision-ecommerce-activity-7092418735092772865-1WR9?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_realestate-realestatebusiness-webar-activity-7096732185600172032-2hmF?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1kupwBg3tG1ltc2CHdaesOVQ_FoOx4TTw/view?usp=share_link","https://drive.google.com/file/d/1C524djF-VH1C5enz_D-jOVgGz5WstbwK/view?usp=share_link","https://drive.google.com/file/d/1obmXgKRpww2EQOt4uwRsWxRjCr3sV7X5/view?usp=drive_link","https://drive.google.com/file/d/1tQM3mkNG2AnEn06QjoR2-KSUcy_55gEx/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_computervision-vr-ar-activity-6693559090808975360-8N8T?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_automobiles-extendedreality-augmentedreality-activity-6835547416591167488-W_nI?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1L3fLWhPIfQ6Kb23xR2WXoOw_XfZfYLF8/view?usp=share_link"]),t.s)
 B.Bq=A.a(s([0,1]),t.d)
 B.Br=A.a(s([0,6,12,18]),t.t)
 B.AD=new A.cJ(58136,"MaterialIcons",null)
@@ -70659,12 +70658,12 @@ B.C_=A.a(s([66,77]),t.Z)
 B.AX=new A.jf(B.C_,"image/bmp")
 B.BQ=A.a(s([B.AV,B.AZ,B.B_,B.AW,B.AY,B.AX]),A.ai("x<jf>"))
 B.BR=A.a(s([4,9,14,19]),t.t)
-B.h5=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
+B.h4=A.a(s([0,0,65498,45055,65535,34815,65534,18431]),t.t)
 B.yb=new A.o1(0,"auto")
 B.yc=new A.o1(1,"full")
 B.yd=new A.o1(2,"chromium")
 B.C0=A.a(s([B.yb,B.yc,B.yd]),A.ai("x<o1>"))
-B.h6=A.a(s(["Professional Support","ML Development","Web3D Development","Native AR/VR"]),t.s)
+B.h5=A.a(s(["Professional Support","ML Development","Web3D Development","Native AR/VR"]),t.s)
 B.kn=A.a(s([B.fT,B.e1,B.cQ,B.e4,B.e8,B.c5,B.kl,B.h3,B.aB,B.e9,B.bG,B.cN,B.cO,B.e2,B.cP,B.fU,B.bp,B.fV,B.fW,B.kj,B.aA,B.e3,B.cR,B.cS,B.fX,B.fY,B.fZ,B.h_,B.kk,B.h0,B.h1,B.e5,B.cT,B.cU,B.h2,B.e6,B.e7]),A.ai("x<bg>"))
 B.Av=new A.E4(null)
 B.wl=new A.B_(null)
@@ -70698,6 +70697,7 @@ B.wi=new A.ki("From","Navi Mumbai, India",null)
 B.C2=A.a(s([B.f9,B.wi]),t.p)
 B.C3=A.a(s([B.dG]),t.QP)
 B.C4=A.a(s([B.fe,B.ff]),A.ai("x<ru>"))
+B.h6=A.a(s(["https://www.linkedin.com/posts/siddheshgunjal_python-ml-keras-activity-7019906325933400064-Fju0?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_emotionai-emodetect-emotiontracking-activity-7097494709224271872-HlfY?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_ai-deeplearning-cybersecurity-activity-6827897161070514176-BM6Y?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_webar-computervision-ecommerce-activity-7092418735092772865-1WR9?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_realestate-realestatebusiness-webar-activity-7096732185600172032-2hmF?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1yyRjGldjHqNcjGrI0rNzxDv7aU2YXJm7/view?usp=drive_link","https://drive.google.com/file/d/1C524djF-VH1C5enz_D-jOVgGz5WstbwK/view?usp=share_link","https://drive.google.com/file/d/1obmXgKRpww2EQOt4uwRsWxRjCr3sV7X5/view?usp=drive_link","https://drive.google.com/file/d/1tQM3mkNG2AnEn06QjoR2-KSUcy_55gEx/view?usp=share_link","https://www.linkedin.com/posts/siddheshgunjal_computervision-vr-ar-activity-6693559090808975360-8N8T?utm_source=share&utm_medium=member_desktop","https://www.linkedin.com/posts/siddheshgunjal_automobiles-extendedreality-augmentedreality-activity-6835547416591167488-W_nI?utm_source=share&utm_medium=member_desktop","https://drive.google.com/file/d/1L3fLWhPIfQ6Kb23xR2WXoOw_XfZfYLF8/view?usp=share_link"]),t.s)
 B.C5=A.a(s([0,4,12,1,5,13,3,7,15]),t.t)
 B.C6=A.a(s(["pointerdown","pointermove","pointerleave","pointerup","pointercancel","touchstart","touchend","touchmove","touchcancel","mousedown","mousemove","mouseleave","mouseup","keyup","keydown"]),t.s)
 B.eb=A.a(s(["assets/projects/slackker.webp","assets/projects/emo.webp","assets/projects/cctv-camera.webp","assets/projects/ar_menu.webp","assets/projects/ar_brochure.webp","assets/projects/ar_pack.webp","assets/projects/robot.webp","assets/projects/teeth.webp","assets/projects/invoice.webp","assets/projects/motion_control.webp","assets/projects/ar_car.webp","assets/projects/ratlab.webp"]),t.s)
