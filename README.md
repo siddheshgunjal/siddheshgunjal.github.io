@@ -2,8 +2,8 @@
 
 Is a multi-platform portfolio for developers available for mobile, windows and web. Includes the following sections:
 - Home
-- About
-- Services
+- About me
+- Experience
 - Portfolio
 - Contact
 
