@@ -2532,10 +2532,6 @@ blockquote {
     font-size: 18px;
   }
 
-  .clickable {
-    cursor: pointer;
-  }
-
   #home_page_photo {
     display: block;
     width: 100%;
@@ -2966,4 +2962,8 @@ blockquote {
 
 .fun-fact-block-text {
   display: block;
+}
+
+.clickable {
+  cursor: pointer;
 }
