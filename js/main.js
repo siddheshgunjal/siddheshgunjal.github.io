@@ -113,7 +113,7 @@
 
     // On Document Load
     $(document).ready(function () {
-        var movementStrength = 50;
+        var movementStrength = 45;
         var height = movementStrength / $(document).height();
         var width = movementStrength / $(document).width();
         $("body").on('mousemove', function(e){

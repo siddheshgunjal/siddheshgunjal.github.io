@@ -125,6 +125,7 @@ p {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
+/*  border: 2px solid #fff;*/
 }
 
 /* buttons */
@@ -390,7 +391,7 @@ input[type="submit"]:focus {
 
 .header-photo {
   position: relative;
-  width: 180px;
+  width: 250px;
   margin: 0 auto 30px;
   z-index: 1;
 }
@@ -1340,19 +1341,19 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-container.skill-4 .skill-percentage {
-  width: 90%;
+  width: 85%;
 }
 
 .skills-second-style .skill-container.skill-5 .skill-percentage {
-  width: 95%;
+  width: 90%;
 }
 
 .skills-second-style .skill-container.skill-6 .skill-percentage {
-  width: 95%;
+  width: 80%;
 }
 
 .skills-second-style .skill-container.skill-7 .skill-percentage {
-  width: 75%;
+  width: 90%;
 }
 
 .skills-second-style .skill-container.skill-8 .skill-percentage {
@@ -1360,21 +1361,32 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .skills-second-style .skill-container.skill-9 .skill-percentage {
-  width: 90%;
-}
-
-.skills-second-style .skill-container.skill-10 .skill-percentage {
   width: 95%;
 }
 
+.skills-second-style .skill-container.skill-10 .skill-percentage {
+  width: 75%;
+}
+
 .skills-second-style .skill-container.skill-11 .skill-percentage {
-  width: 90%;
+  width: 85%;
 }
 
 .skills-second-style .skill-container.skill-12 .skill-percentage {
-  width: 80%;
+  width: 90%;
 }
 
+.skills-second-style .skill-container.skill-13 .skill-percentage {
+  width: 95%;
+}
+
+.skills-second-style .skill-container.skill-14 .skill-percentage {
+  width: 90%;
+}
+
+.skills-second-style .skill-container.skill-15 .skill-percentage {
+  width: 75%;
+}
 
 /* --- End of Skills Values --- */
 
@@ -1906,6 +1918,7 @@ textarea.form-control, textarea.form-control:focus {
 .ajax-page-title h1 {
   display: inline-block;
   margin: 0;
+  line-height: 1.2;
 }
 
 .portfolio-block {
@@ -2323,9 +2336,9 @@ blockquote {
   }
 
   .header .copyrights {
+    position: absolute;
     right: 0;
     width: 100%;
-    position: absolute;
     margin-top: 30px;
     bottom: 0;
   }
@@ -2337,6 +2350,7 @@ blockquote {
   .page-content {
     padding: 0;
     margin: 0;
+    border: none;
     border-radius: 0;
     min-height: 100%;
   }
@@ -2362,7 +2376,7 @@ blockquote {
 
   .header-photo {
     max-width: 250px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .mobile-menu-hide {
