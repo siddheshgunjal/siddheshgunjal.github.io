@@ -1602,7 +1602,7 @@ textarea.form-control, textarea.form-control:focus {
 .portfolio-grid figure .portfolio-item-img:after {
   content: '';
   position: absolute;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.3);
   top: 0;
   right: 0;
   bottom: 0;
