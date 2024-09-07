@@ -1,0 +1,77 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="lnr lnr-cross"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Nuclei Detect</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8 col-md-8 portfolio-block">
+
+                <div class="owl-carousel portfolio-page-carousel">
+                    <div class="item">
+                        <img src="img/portfolio/full/nucleus1.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/nucleus2.png" alt="" />
+                    </div>
+                    <div class="item">
+                        <img src="img/portfolio/full/nucleus3.png" alt="" />
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    jQuery(document).ready(function($){
+                        $('.portfolio-page-carousel').imagesLoaded(function(){
+                            $('.portfolio-page-carousel').owlCarousel({
+                                smartSpeed:1200,
+                                items: 1,
+                                loop: true,
+                                dots: true,
+                                nav: true,
+                                navText: false,
+                                margin: 10,
+                                autoHeight:true
+                            });
+                        });
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-4 col-md-4 portfolio-block">
+                <!-- Project Description -->
+                <div class="project-description">
+                    <div class="block-title">
+                        <h2>Description</h2>
+                    </div>
+                    <ul class="project-general-info">
+                        <li><p><i class="fa fa-user"></i> Siddhesh Gunjal</p></li>
+                    </ul>
+
+                    <p class="text-justify">The objective was to detect and segment the Nuclei from the microscopic images of cells and organisms. This project later served as a backbone for Breast Cancer cells detection. Model was first tested with ResNet 50. After the successful implementation of application ResNet 101 was used as a Backbone to achieve higher accuracy and precision. After successful training and deployment of model it was performing great was achieving score ~92%.</p>
+                    <!-- /Project Description -->
+
+                    <!-- Technology -->
+                    <div class="tags-block">
+                        <div class="block-title">
+                            <h3>Technology</h3>
+                        </div>
+                        <ul class="tags">
+                            <li><a>Python</a></li>
+                            <li><a>TensorFlow</a></li>
+                            <li><a>OpenCV</a></li>
+                            <li><a>ResNet</a></li>
+                        </ul>
+                    </div>
+                    <!-- /Technology -->
+                </div>
+                <!-- Project Description -->
+            </div>
+        </div>
+    </div>
+</div>
