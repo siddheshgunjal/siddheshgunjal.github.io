@@ -487,6 +487,7 @@ input[type="submit"]:focus {
 }
 
 .header .copyrights {
+  display: block;
   color: #bbb;
   width: 380px;
   position: absolute;
@@ -2336,11 +2337,7 @@ blockquote {
   }
 
   .header .copyrights {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    margin-top: 30px;
-    bottom: 0;
+    display: none;
   }
 
   .page {
