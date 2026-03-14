@@ -3003,6 +3003,11 @@ html[data-theme="dark"] {
   --glass-bg: rgba(30, 30, 30, 0.6);
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-blur: 12px;
+  --glass-header-bg: rgba(7, 7, 12, 0.82);
+  --glass-header-blur: 24px;
+  --glass-header-border: rgba(255, 255, 255, 0.10);
+  --glass-content-bg: rgba(10, 10, 20, 0.50);
+  --glass-content-blur: 16px;
   --shadow-color: rgba(0, 0, 0, 0.25);
   --preloader-bg: #111;
   --scrollbar-track: #555;
@@ -3030,6 +3035,11 @@ html[data-theme="light"] {
   --glass-bg: rgba(255, 255, 255, 0.6);
   --glass-border: rgba(0, 0, 0, 0.06);
   --glass-blur: 12px;
+  --glass-header-bg: rgba(201, 217, 240, 0.15);
+  --glass-header-blur: 24px;
+  --glass-header-border: rgba(0, 0, 0, 0.09);
+  --glass-content-bg: rgba(255, 255, 255, 0);
+  --glass-content-blur: 8px;
   --shadow-color: rgba(0, 0, 0, 0.08);
   --preloader-bg: #f0f2f5;
   --scrollbar-track: #cbd5e1;
@@ -3099,7 +3109,7 @@ a {
 }
 
 .page-content {
-  background-color: var(--bg-card);
+  background-color: transparent;
   box-shadow: 0 0 80px -5px var(--shadow-color);
   border: 1px solid var(--border-subtle);
 }
@@ -3120,12 +3130,22 @@ a {
 
 .section-content,
 .single-page-content {
-  background-color: var(--bg-primary);
+  background-color: var(--glass-content-bg);
+  backdrop-filter: blur(var(--glass-content-blur));
+  -webkit-backdrop-filter: blur(var(--glass-content-blur));
 }
 
 
 /* --- Header --- */
 @media only screen and (min-width: 1025px) {
+  .header {
+    background-color: var(--glass-header-bg);
+    /* backdrop-filter: blur(var(--glass-header-blur));
+    -webkit-backdrop-filter: blur(var(--glass-header-blur)); */
+    border: 1px solid var(--glass-header-border);
+    border-radius: 32px;
+  }
+
   ul.main-menu {
     background: var(--glass-bg);
     backdrop-filter: blur(var(--glass-blur));
@@ -3643,7 +3663,10 @@ html[data-theme="light"] .theme-toggle .icon-moon {
 /* --- Mobile Overrides --- */
 @media only screen and (max-width: 1024px) {
   .header {
-    background-color: var(--bg-card);
+    background-color: var(--glass-header-bg);
+    backdrop-filter: blur(var(--glass-header-blur));
+    -webkit-backdrop-filter: blur(var(--glass-header-blur));
+    border-left: 1px solid var(--glass-header-border);
     transition: all 0.25s ease-in-out;
   }
 
