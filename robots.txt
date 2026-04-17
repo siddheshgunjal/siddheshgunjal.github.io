@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://siddheshgunjal.github.io/sitemap.xml
