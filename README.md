@@ -2,7 +2,7 @@
 
 This is a repo where my personal website is hosted. You're free to use it for you own usecase :smiley:
 
-![Home Page image](img/meta_image.png)
+![Home Page image](img/meta_image.webp)
 
 ## Sections in website
 - Home
