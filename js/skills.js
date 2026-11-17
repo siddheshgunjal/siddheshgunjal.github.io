@@ -10,7 +10,7 @@
   'use strict';
 
   var SKILLS = {
-    technical: [
+    core: [
       { name: 'TensorFlow',    level: 90 },
       { name: 'PyTorch',       level: 90 },
       { name: 'OpenCV',        level: 95 },
