@@ -1,0 +1,114 @@
+// ============================================================
+//  Skills Bars
+//  Single source of truth for the skill bars on the Resume
+//  section. To add, remove, reorder, or re-rate a skill,
+//  edit only the SKILLS data below — the bars in
+//  index.html (containers with [data-skills]) are rendered
+//  from this script, so no HTML/CSS changes are needed.
+// ============================================================
+(function() {
+  'use strict';
+
+  var SKILLS = {
+    technical: [
+      { name: 'TensorFlow',    level: 90 },
+      { name: 'PyTorch',       level: 90 },
+      { name: 'OpenCV',        level: 95 },
+      { name: 'Transformers',  level: 85 },
+      { name: 'Flask',         level: 90 },
+      { name: 'FastAPI',       level: 80 },
+      { name: 'CustomTkinter', level: 90 },
+      { name: 'Docker',        level: 85 }
+    ],
+    coding: [
+      { name: 'Python',    level: 95 },
+      { name: 'R',         level: 75 },
+      { name: 'C/C++',     level: 85 },
+      { name: 'C#',        level: 90 },
+      { name: 'JavaScript',level: 95 },
+      { name: 'HTML/CSS',  level: 90 },
+      { name: 'Dart',      level: 75 }
+    ]
+  };
+
+  // How long (ms) each bar takes to fill, and the stagger between bars.
+  var FILL_DURATION_MS = 1000;
+  var FILL_STAGGER_MS  = 120;
+
+  function clampLevel(level) {
+    var n = parseInt(level, 10);
+    if (isNaN(n)) n = 0;
+    return Math.max(0, Math.min(100, n));
+  }
+
+  function buildSkillRow(skill) {
+    var level = clampLevel(skill.level);
+
+    var row = document.createElement('div');
+    row.className = 'skill clearfix';
+
+    var name = document.createElement('h4');
+    name.textContent = skill.name;
+
+    var value = document.createElement('div');
+    value.className = 'skill-value';
+    value.textContent = level + '%';
+
+    var container = document.createElement('div');
+    container.className = 'skill-container';
+
+    var bar = document.createElement('div');
+    bar.className = 'skill-percentage';
+    bar.style.transition = 'width ' + FILL_DURATION_MS + 'ms ease-in-out';
+    bar.style.width = '0%';
+
+    container.appendChild(bar);
+    row.appendChild(name);
+    row.appendChild(value);
+
+    var fragment = document.createDocumentFragment();
+    fragment.appendChild(row);
+    fragment.appendChild(container);
+
+    return { fragment: fragment, bar: bar, level: level };
+  }
+
+  function renderGroup(container, skills) {
+    container.textContent = '';
+    var rows = [];
+    for (var i = 0; i < skills.length; i++) {
+      var row = buildSkillRow(skills[i]);
+      container.appendChild(row.fragment);
+      rows.push(row);
+    }
+
+    // Animate bars from 0% to their level once styles are applied.
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        for (var i = 0; i < rows.length; i++) {
+          (function(row, index) {
+            setTimeout(function() {
+              row.bar.style.width = row.level + '%';
+            }, index * FILL_STAGGER_MS);
+          })(rows[i], i);
+        }
+      });
+    });
+  }
+
+  function init() {
+    var groups = document.querySelectorAll('[data-skills]');
+    for (var i = 0; i < groups.length; i++) {
+      var key = groups[i].getAttribute('data-skills');
+      if (SKILLS[key]) {
+        renderGroup(groups[i], SKILLS[key]);
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
