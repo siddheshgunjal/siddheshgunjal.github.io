@@ -1,300 +1,355 @@
 // ============================================================
 //  Theme Toggle (Dark default, persisted in localStorage)
 // ============================================================
-(function() {
-  'use strict';
+(function () {
+  "use strict";
 
-  var THEME_KEY = 'portfolio-theme';
+  var THEME_KEY = "portfolio-theme";
 
   function getPreferredTheme() {
     var stored = localStorage.getItem(THEME_KEY);
-    if (stored === 'light' || stored === 'dark') return stored;
-    return 'dark';
+    if (stored === "light" || stored === "dark") return stored;
+    return "dark";
   }
 
   function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem(THEME_KEY, theme);
   }
 
   // Apply theme immediately (before DOM ready) to prevent flash
   applyTheme(getPreferredTheme());
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var toggle = document.getElementById('theme-toggle');
+  document.addEventListener("DOMContentLoaded", function () {
+    var toggle = document.getElementById("theme-toggle");
     if (toggle) {
-      toggle.addEventListener('click', function(e) {
+      toggle.addEventListener("click", function (e) {
         e.preventDefault();
-        var current = document.documentElement.getAttribute('data-theme') || 'dark';
-        applyTheme(current === 'dark' ? 'light' : 'dark');
+        var current =
+          document.documentElement.getAttribute("data-theme") || "dark";
+        applyTheme(current === "dark" ? "light" : "dark");
       });
     }
   });
 })();
 
-(function($) {
-"use strict";
-    // Portfolio subpage filters
-    function portfolio_init() {
-        var portfolio_grid = $('.portfolio-grid'),
-            portfolio_filter = $('.portfolio-filters');
-            
-        if (portfolio_grid) {
+(function ($) {
+  "use strict";
+  // Portfolio subpage filters
+  function portfolio_init() {
+    var portfolio_grid = $(".portfolio-grid"),
+      portfolio_filter = $(".portfolio-filters");
 
-            portfolio_grid.shuffle({
-                speed: 450,
-                itemSelector: 'figure'
-            });
+    if (portfolio_grid) {
+      portfolio_grid.shuffle({
+        speed: 450,
+        itemSelector: "figure",
+      });
 
-            portfolio_filter.on("click", ".filter", function (e) {
-                portfolio_grid.shuffle('update');
-                e.preventDefault();
-                $('.portfolio-filters .filter').parent().removeClass('active');
-                $(this).parent().addClass('active');
-                portfolio_grid.shuffle('shuffle', $(this).attr('data-group') );
-            });
-
-        }
+      portfolio_filter.on("click", ".filter", function (e) {
+        portfolio_grid.shuffle("update");
+        e.preventDefault();
+        $(".portfolio-filters .filter").parent().removeClass("active");
+        $(this).parent().addClass("active");
+        portfolio_grid.shuffle("shuffle", $(this).attr("data-group"));
+      });
     }
-    // /Portfolio subpage filters
+  }
+  // /Portfolio subpage filters
 
+  // Portfolio grid is rendered dynamically from window.PROJECTS so the
+  // tile order and every field (slug, image, name, category, groups) is
+  // kept in a single source of truth. No hardcoded tiles in index.html.
+  function renderPortfolioGrid() {
+    var projects = window.PROJECTS || {};
+    var grid = $(".portfolio-grid");
+    if (!grid.length) return;
 
-    // Hide Mobile menu
-    function mobileMenuHide() {
-        var windowWidth = $(window).width(),
-            siteHeader = $('#site_header');
+    var tiles = Object.keys(projects)
+      .map(function (key) {
+        var project = projects[key];
+        if (!project) return "";
+        var thumbnail = project.thumbnail || "";
+        var name = project.title || "";
+        var category = project.category || "";
+        var groups = project.groups || ["category_all"];
+        // Build a valid JSON array (double-quoted) and wrap it in
+        // single quotes for the HTML attribute. Shuffle reads this via
+        // jQuery's data() parser, which must stay valid JSON.
+        var groupsAttr = "'" + JSON.stringify(groups) + "'";
+        return (
+          '<figure class="item standard" data-groups=' +
+          groupsAttr +
+          ">" +
+          '<div class="portfolio-item-img">' +
+          '<img src="' +
+          thumbnail +
+          '" alt="' +
+          name +
+          ' project thumbnail" loading="lazy" decoding="async" title="" />' +
+          '<a href="portfolio/' +
+          project.slug +
+          '.html" class="ajax-page-load"></a>' +
+          "</div>" +
+          '<i class="far fa-file-alt"></i>' +
+          '<h4 class="name">' +
+          name +
+          "</h4>" +
+          '<span class="category">' +
+          category +
+          "</span>" +
+          "</figure>"
+        );
+      })
+      .join("");
 
-        if (windowWidth < 1025) {
-            siteHeader.addClass('mobile-menu-hide');
-            $('.menu-toggle').removeClass('open');
-            setTimeout(function(){
-                siteHeader.addClass('animate');
-            }, 500);
-        } else {
-            siteHeader.removeClass('animate');
-        }
+    grid.html(tiles);
+  }
+  // /Render portfolio grid
+
+  // Hide Mobile menu
+  function mobileMenuHide() {
+    var windowWidth = $(window).width(),
+      siteHeader = $("#site_header");
+
+    if (windowWidth < 1025) {
+      siteHeader.addClass("mobile-menu-hide");
+      $(".menu-toggle").removeClass("open");
+      setTimeout(function () {
+        siteHeader.addClass("animate");
+      }, 500);
+    } else {
+      siteHeader.removeClass("animate");
     }
-    // /Hide Mobile menu
+  }
+  // /Hide Mobile menu
 
-    // Custom scroll
-    function customScroll() {
-        var windowWidth = $(window).width();
-        if (windowWidth > 1024) {
-            $('.animated-section, .single-page-content').each(function() {
-                $(this).perfectScrollbar();
-            });
-        } else {
-            $('.animated-section, .single-page-content').each(function() {
-                $(this).perfectScrollbar('destroy');
-            });
-        }
+  // Custom scroll
+  function customScroll() {
+    var windowWidth = $(window).width();
+    if (windowWidth > 1024) {
+      $(".animated-section, .single-page-content").each(function () {
+        $(this).perfectScrollbar();
+      });
+    } else {
+      $(".animated-section, .single-page-content").each(function () {
+        $(this).perfectScrollbar("destroy");
+      });
     }
-    // /Custom scroll
+  }
+  // /Custom scroll
 
-    //On Window load & Resize
-    $(window)
-        .on('load', function() { //Load
-            // Animation on Page Loading
-            $(".preloader").fadeOut( 800, "linear" );
+  //On Window load & Resize
+  $(window)
+    .on("load", function () {
+      //Load
+      // Animation on Page Loading
+      $(".preloader").fadeOut(800, "linear");
 
-            // initializing page transition.
-            var ptPage = $('.animated-sections');
-            if (ptPage[0]) {
-                PageTransitions.init({
-                    menu: 'ul.main-menu',
-                });
-            }
-        })
-        .on('resize', function() { //Resize
-             mobileMenuHide();
-             $('.animated-section').each(function() {
-                $(this).perfectScrollbar('update');
-            });
-            customScroll();
+      // initializing page transition.
+      var ptPage = $(".animated-sections");
+      if (ptPage[0]) {
+        PageTransitions.init({
+          menu: "ul.main-menu",
         });
-
-
-    // On Document Load
-    $(document).ready(function () {
-        var movementStrength = 45;
-        var height = movementStrength / $(document).height();
-        var width = movementStrength / $(document).width();
-        $("body").on('mousemove', function(e){
-            var pageX = e.pageX - ($(document).width() / 2),
-                pageY = e.pageY - ($(document).height() / 2),
-                newvalueX = width * pageX * -1,
-                newvalueY = height * pageY * -1,
-                elements = $('.lm-animated-bg');
-
-            elements.addClass('transition');
-            elements.css({
-                "background-position": "calc( 50% + " + newvalueX + "px ) calc( 50% + " + newvalueY + "px )",
-            });
-
-            setTimeout(function() {
-                elements.removeClass('transition');
-            }, 300);
-        })
-
-        // Mobile menu
-        $('.menu-toggle').on("click", function () {
-            $('#site_header').addClass('animate');
-            $('#site_header').toggleClass('mobile-menu-hide');
-            $('.menu-toggle').toggleClass('open');
-        });
-
-        // Mobile menu hide on main menu item click
-        $('.main-menu').on("click", "a", function (e) {
-            mobileMenuHide();
-        });
-
-        // Sidebar toggle
-        $('.sidebar-toggle').on("click", function () {
-            $('#blog-sidebar').toggleClass('open');
-        });
-
-        // Initialize Portfolio grid
-        var $portfolio_container = $(".portfolio-grid");
-        $portfolio_container.imagesLoaded(function () {
-            portfolio_init(this);
-        });
-
-        // Blog grid init
-        var $container = $(".blog-masonry");
-        $container.imagesLoaded(function(){
-            $container.masonry();
-        });
-
-        customScroll();
-
-        // Text rotation
-        $('.text-rotation').owlCarousel({
-            loop: true,
-            dots: false,
-            nav: false,
-            margin: 0,
-            items: 1,
-            autoplay: true,
-            autoplayHoverPause: false,
-            autoplayTimeout: 2500,
-            animateOut: 'animated-section-scaleDown',
-            animateIn: 'animated-section-scaleUp'
-        });
-
-        // Testimonials Slider
-        $(".testimonials.owl-carousel").owlCarousel({
-            nav: true, // Show next/prev buttons.
-            items: 3, // The number of items you want to see on the screen.
-            loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
-            navText: false,
-            autoHeight: true,
-            margin: 25,
-            responsive : {
-                // breakpoint from 0 up
-                0 : {
-                    items: 1,
-                },
-                // breakpoint from 480 up
-                480 : {
-                    items: 1,
-                },
-                // breakpoint from 768 up
-                768 : {
-                    items: 2,
-                },
-                1200 : {
-                    items: 2,
-                }
-            }
-        });
-
-        // Clients Slider
-        $(".clients.owl-carousel").imagesLoaded().owlCarousel({
-            nav: true, // Show next/prev buttons.
-            items: 2, // The number of items you want to see on the screen.
-            loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
-            navText: false,
-            margin: 10,
-            autoHeight: true,
-            responsive : {
-                // breakpoint from 0 up
-                0 : {
-                    items: 2,
-                },
-                // breakpoint from 768 up
-                768 : {
-                    items: 4,
-                },
-                1200 : {
-                    items: 5,
-                }
-            }
-        });
-
-
-        //Form Controls
-        $('.form-control')
-            .val('')
-            .on("focusin", function(){
-                $(this).parent('.form-group').addClass('form-group-focus');
-            })
-            .on("focusout", function(){
-                if($(this).val().length === 0) {
-                    $(this).parent('.form-group').removeClass('form-group-focus');
-                }
-            });
-
-        // Lightbox init
-        $('body').magnificPopup({
-            delegate: 'a.lightbox',
-            type: 'image',
-            removalDelay: 300,
-
-            // Class that is added to popup wrapper and background
-            // make it unique to apply your CSS animations just to this exact popup
-            mainClass: 'mfp-fade',
-            image: {
-                // options for image content type
-                titleSrc: 'title',
-                gallery: {
-                    enabled: true
-                },
-            },
-
-            iframe: {
-                markup: '<div class="mfp-iframe-scaler">'+
-                        '<div class="mfp-close"></div>'+
-                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-                        '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
-                      '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
-
-                patterns: {
-                    youtube: {
-                      index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
-
-                      id: null, // String that splits URL in a two parts, second part should be %id%
-                      // Or null - full URL will be returned
-                      // Or a function that should return %id%, for example:
-                      // id: function(url) { return 'parsed id'; }
-
-                      src: '%id%?autoplay=1' // URL that will be set as a source for iframe.
-                    },
-                    vimeo: {
-                      index: 'vimeo.com/',
-                      id: '/',
-                      src: '//player.vimeo.com/video/%id%?autoplay=1'
-                    },
-                },
-
-                srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-            },
-
-            callbacks: {
-                markupParse: function(template, values, item) {
-                 values.title = item.el.attr('title');
-                }
-            },
-        });
+      }
+    })
+    .on("resize", function () {
+      //Resize
+      mobileMenuHide();
+      $(".animated-section").each(function () {
+        $(this).perfectScrollbar("update");
+      });
+      customScroll();
     });
 
+  // On Document Load
+  $(document).ready(function () {
+    var movementStrength = 45;
+    var height = movementStrength / $(document).height();
+    var width = movementStrength / $(document).width();
+    $("body").on("mousemove", function (e) {
+      var pageX = e.pageX - $(document).width() / 2,
+        pageY = e.pageY - $(document).height() / 2,
+        newvalueX = width * pageX * -1,
+        newvalueY = height * pageY * -1,
+        elements = $(".lm-animated-bg");
+
+      elements.addClass("transition");
+      elements.css({
+        "background-position":
+          "calc( 50% + " + newvalueX + "px ) calc( 50% + " + newvalueY + "px )",
+      });
+
+      setTimeout(function () {
+        elements.removeClass("transition");
+      }, 300);
+    });
+
+    // Mobile menu
+    $(".menu-toggle").on("click", function () {
+      $("#site_header").addClass("animate");
+      $("#site_header").toggleClass("mobile-menu-hide");
+      $(".menu-toggle").toggleClass("open");
+    });
+
+    // Mobile menu hide on main menu item click
+    $(".main-menu").on("click", "a", function (e) {
+      mobileMenuHide();
+    });
+
+    // Sidebar toggle
+    $(".sidebar-toggle").on("click", function () {
+      $("#blog-sidebar").toggleClass("open");
+    });
+
+    // Render the portfolio grid from window.PROJECTS (single source of truth)
+    // BEFORE shuffle is initialized so tiles exist to be shuffled.
+    renderPortfolioGrid();
+
+    // Initialize Portfolio grid
+    var $portfolio_container = $(".portfolio-grid");
+    $portfolio_container.imagesLoaded(function () {
+      portfolio_init(this);
+    });
+
+    // Blog grid init
+    var $container = $(".blog-masonry");
+    $container.imagesLoaded(function () {
+      $container.masonry();
+    });
+
+    customScroll();
+
+    // Text rotation
+    $(".text-rotation").owlCarousel({
+      loop: true,
+      dots: false,
+      nav: false,
+      margin: 0,
+      items: 1,
+      autoplay: true,
+      autoplayHoverPause: false,
+      autoplayTimeout: 2500,
+      animateOut: "animated-section-scaleDown",
+      animateIn: "animated-section-scaleUp",
+    });
+
+    // Testimonials Slider
+    $(".testimonials.owl-carousel").owlCarousel({
+      nav: true, // Show next/prev buttons.
+      items: 3, // The number of items you want to see on the screen.
+      loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
+      navText: false,
+      autoHeight: true,
+      margin: 25,
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1,
+        },
+        // breakpoint from 480 up
+        480: {
+          items: 1,
+        },
+        // breakpoint from 768 up
+        768: {
+          items: 2,
+        },
+        1200: {
+          items: 2,
+        },
+      },
+    });
+
+    // Clients Slider
+    $(".clients.owl-carousel")
+      .imagesLoaded()
+      .owlCarousel({
+        nav: true, // Show next/prev buttons.
+        items: 2, // The number of items you want to see on the screen.
+        loop: false, // Infinity loop. Duplicate last and first items to get loop illusion.
+        navText: false,
+        margin: 10,
+        autoHeight: true,
+        responsive: {
+          // breakpoint from 0 up
+          0: {
+            items: 2,
+          },
+          // breakpoint from 768 up
+          768: {
+            items: 4,
+          },
+          1200: {
+            items: 5,
+          },
+        },
+      });
+
+    //Form Controls
+    $(".form-control")
+      .val("")
+      .on("focusin", function () {
+        $(this).parent(".form-group").addClass("form-group-focus");
+      })
+      .on("focusout", function () {
+        if ($(this).val().length === 0) {
+          $(this).parent(".form-group").removeClass("form-group-focus");
+        }
+      });
+
+    // Lightbox init
+    $("body").magnificPopup({
+      delegate: "a.lightbox",
+      type: "image",
+      removalDelay: 300,
+
+      // Class that is added to popup wrapper and background
+      // make it unique to apply your CSS animations just to this exact popup
+      mainClass: "mfp-fade",
+      image: {
+        // options for image content type
+        titleSrc: "title",
+        gallery: {
+          enabled: true,
+        },
+      },
+
+      iframe: {
+        markup:
+          '<div class="mfp-iframe-scaler">' +
+          '<div class="mfp-close"></div>' +
+          '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+          '<div class="mfp-title mfp-bottom-iframe-title"></div>' +
+          "</div>", // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+        patterns: {
+          youtube: {
+            index: "youtube.com/", // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+            id: null, // String that splits URL in a two parts, second part should be %id%
+            // Or null - full URL will be returned
+            // Or a function that should return %id%, for example:
+            // id: function(url) { return 'parsed id'; }
+
+            src: "%id%?autoplay=1", // URL that will be set as a source for iframe.
+          },
+          vimeo: {
+            index: "vimeo.com/",
+            id: "/",
+            src: "//player.vimeo.com/video/%id%?autoplay=1",
+          },
+        },
+
+        srcAction: "iframe_src", // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+      },
+
+      callbacks: {
+        markupParse: function (template, values, item) {
+          values.title = item.el.attr("title");
+        },
+      },
+    });
+  });
 })(jQuery);
