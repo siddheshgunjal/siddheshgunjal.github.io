@@ -1958,11 +1958,15 @@ input[type="text"],
 }
 
 .project-general-info li {
-    margin: 0 0 10px;
+    margin: 0 0 5px;
 }
 
 .project-general-info .fa {
     color: #04b4e0;
+    margin-right: 5px;
+}
+
+.fab {
     margin-right: 5px;
 }
 

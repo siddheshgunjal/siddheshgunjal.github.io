@@ -13,25 +13,49 @@
 //  Optional: links: [{ icon, label, href }] — extra info links
 // ============================================================
 window.PROJECTS = {
+  tokenflow: {
+    slug: "tokenflow",
+    title: "TokenFlow",
+    category: "Desktop Application",
+    thumbnail: "img/portfolio/tokenflow_logo.jpg",
+    groups: ["category_all", "category_open"],
+    video: "/videos/tokenflow_demo.mp4",
+    links: [
+      { icon: "globe", label: "Website", href: "https://token-flow.xyz" },
+      {
+        icon: "github",
+        label: "Github",
+        href: "https://github.com/siddheshgunjal/TokenFlow",
+      },
+    ],
+    description: [
+      "TokenFlow is a private dashboard for Ollama and DeepSeek usage. Analyse your Local AI usage and DeepSeek balance history without uploading your usage data anywhere.",
+      '<ul class="text-justify"><li><span>&#8226;</span> Built with Rust</li><li><span>&#8226;</span> No telemetry</li><li><span>&#8226;</span> Local Processing</li><li><span>&#8226;</span> Keychain Protection</li></ul>',
+      "",
+      "Unlike other tools, TokenFlow stays put! TokenFlow is built with Rust for a small footprint (~30 MB after install) and lower memory overhead (~60 MB while running).",
+      "It also uses the system keychain for secure storage of your API keys.",
+    ],
+    tags: ["Rust", "Tauri", "Axum", "Tailwind CSS", "Framer Motion"],
+  },
   fluxtest: {
     slug: "fluxtest",
     title: "FluxTest",
-    category: "Python Package",
+    category: "Docker Application",
     thumbnail: "img/portfolio/fluxtest_logo.jpg",
     groups: ["category_all", "category_open"],
-    video:
-      "https://github.com/user-attachments/assets/73e13b8b-066c-464d-b99e-011a62d68ae8",
+    video: "/videos/fluxtest_demo.mp4",
     links: [
       { icon: "globe", label: "Website", href: "https://flux-test.com" },
       {
         icon: "github",
-        label: "Github link",
+        label: "Github",
         href: "https://github.com/siddheshgunjal/flux-test",
       },
     ],
     description: [
       "FluxTest is a self-hosted server network diagnosis tool that measures:",
       '<ul class="text-justify"><li><span>&#8226;</span> Latency (round-trip time)</li><li><span>&#8226;</span> Jitter (RTT consistency)</li><li><span>&#8226;</span> Download throughput</li><li><span>&#8226;</span> Upload throughput</li><li><span>&#8226;</span> Bufferbloat (latency under load)</li></ul>',
+      "",
       "After each test, FluxTest generates an overall A–F network score with per-metric diagnosis and actionable recommendations. Results can be exported as a branded PNG report card.",
     ],
     tags: ["Python", "Flask", "React", "Tailwind CSS", "Docker"],
@@ -43,19 +67,19 @@ window.PROJECTS = {
     category: "Python Package",
     thumbnail: "img/portfolio/slackker-logo.jpg",
     groups: ["category_all", "category_open"],
-    video:
-      "https://github.com/user-attachments/assets/41ab1ee9-4d3c-44d0-82b2-3194acbf7727",
+    video: "/videos/slackker_demo.mp4",
     links: [
       { icon: "globe", label: "Website", href: "https://slackker.com" },
       {
         icon: "github",
-        label: "Github link",
+        label: "Github",
         href: "https://github.com/siddheshgunjal/slackker",
       },
     ],
     description: [
       "Slackker sends real-time notifications for any Python script, data pipeline, ML training run, or automation workflow — complete with metrics, outputs, and optional plots.",
       '<p class="text-justify">Key Features:</p><ul class="text-justify"><li><span>&#8226;</span> Easy integration</li><li><span>&#8226;</span> Real-time Updates</li><li><span>&#8226;</span> Plots for training</li><li><span>&#8226;</span> Customizable notifications</li></ul>',
+      "",
       "Stop babysitting terminal. Slackker keeps you informed so you can stay heads-down on what actually matters.",
     ],
     tags: ["Python", "HTTPX", "GraphAPI", "AsyncIO", "AIOHTTP"],
@@ -64,7 +88,7 @@ window.PROJECTS = {
   emodetect: {
     slug: "emodetect",
     title: "Emo-Detect",
-    category: "Computer Vision",
+    category: "Desktop Application",
     thumbnail: "img/portfolio/emo-detect.jpg",
     groups: ["category_all", "category_ml"],
     video:
@@ -83,7 +107,7 @@ window.PROJECTS = {
   aicam: {
     slug: "aicam",
     title: "AI assisted CCTV",
-    category: "Computer Vision",
+    category: "Desktop Application",
     thumbnail: "img/portfolio/cctv-system.jpg",
     groups: ["category_all", "category_ml"],
     video:
@@ -110,7 +134,7 @@ window.PROJECTS = {
     links: [
       {
         icon: "github",
-        label: "Github link",
+        label: "Github",
         href: "https://github.com/siddheshgunjal/html_surface_tracking",
       },
       {
@@ -138,7 +162,7 @@ window.PROJECTS = {
     links: [
       {
         icon: "github",
-        label: "Github link",
+        label: "Github",
         href: "https://github.com/abhijithneilabraham/tableQA",
       },
     ],
@@ -319,7 +343,7 @@ window.PROJECTS = {
     links: [
       {
         icon: "github",
-        label: "Github link",
+        label: "Github",
         href: "https://github.com/christitustech/mybash",
       },
     ],
@@ -430,7 +454,7 @@ window.PROJECTS = {
     links: [
       {
         icon: "github",
-        label: "Github link",
+        label: "Github",
         href: "https://github.com/siddheshgunjal/self-driving-car-unity-simulator",
       },
     ],
