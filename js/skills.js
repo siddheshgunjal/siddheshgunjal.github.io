@@ -11,23 +11,34 @@
 
   var SKILLS = {
     core: [
+      { name: "Agentic Systems", level: 95 },
+      { name: "MCP", level: 95 },
+      { name: "LoRA Fine-tunning", level: 90 },
       { name: "TensorFlow", level: 90 },
       { name: "PyTorch", level: 90 },
       { name: "OpenCV", level: 95 },
       { name: "Transformers", level: 85 },
-      { name: "Flask", level: 90 },
-      { name: "FastAPI", level: 80 },
+    ],
+    frameworks: [
+      { name: "Tauri", level: 85 },
+      { name: "DsPY", level: 85 },
+      { name: "Flask", level: 95 },
+      { name: "FastAPI", level: 90 },
       { name: "CustomTkinter", level: 90 },
-      { name: "Docker", level: 85 },
+      { name: "Flutter", level: 85 },
+      { name: "React", level: 85 },
+      { name: "Tailwind CSS", level: 80 },
     ],
     coding: [
       { name: "Python", level: 95 },
-      { name: "R", level: 75 },
+      { name: "Rust", level: 75 },
       { name: "C/C++", level: 85 },
       { name: "C#", level: 90 },
+      { name: "Dart", level: 85 },
+      { name: "R", level: 75 },
       { name: "JavaScript", level: 95 },
-      { name: "HTML/CSS", level: 90 },
-      { name: "Dart", level: 75 },
+      { name: "TypeScript", level: 85 },
+      { name: "HTML/CSS", level: 95 },
     ],
   };
 
