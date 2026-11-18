@@ -643,6 +643,11 @@ var PageTransitions = (function ($, options) {
 
       $nextPage.scrollTop(0);
 
+      // Re-run the skills bars every time the Resume section appears.
+      if (currentPageId === "resume" && window.SkillsBar) {
+        window.SkillsBar.animate();
+      }
+
       $currentPage.addClass(outClass).on(animEndEventName, function () {
         $currentPage.off(animEndEventName);
         endCurrentPage = true;
